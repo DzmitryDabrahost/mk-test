@@ -1,0 +1,47 @@
+.clients {
+    background-color: $color-white;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 40px;
+
+        &-title {
+            display: flex;
+        }
+
+        &-text {
+            width: 670px;
+            font-family: 'Lato-Light', sans-serif;
+            font-size: 15px;
+            line-height: 25px;
+            color: $color-light;
+        }
+
+        &-form {
+            margin-left: 100px;
+        }
+
+        &-icon {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 21px;
+            filter: grayscale(100%)
+        }
+    }
+}
+
+.clients-button {
+    background-color: $color-white;
+    color: $color-gold;
+    border: 2px solid $color-gold;
+
+    &:hover {
+        color: $color-white;
+        transition: .3s ease-in-out;
+    }
+}

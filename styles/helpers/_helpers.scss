@@ -22,6 +22,21 @@ h3 {
     color: $color-primary;
 }
 
+h4 {
+    font-family: 'Commisioner-Bold', sans-serif;
+    font-size: 26px;
+    line-height: 40px;
+    letter-spacing: 1.1px;
+    color: $color-gold;
+}
+
+h5 {
+    font-family: 'Commissioner-Regular', sans-serif;
+    font-size: 26px;
+    line-height: 45px;
+    color: $color-primary;
+}
+
 h6 {
     font-family: 'Commissioner-Regular', sans-serif;
     font-size: 20px;
@@ -43,6 +58,7 @@ h6 {
     letter-spacing: 1.1px;
     cursor: pointer;
     padding: 9px 0;
+    border-radius: 2px;
 
     &:hover {
         background-color: $accent75;
