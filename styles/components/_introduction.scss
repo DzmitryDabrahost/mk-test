@@ -1,0 +1,33 @@
+.introduction {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        background-color: $color-white;
+    }
+
+    &-information {
+        padding: 52px 60px 70px 70px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-content {
+            display: flex;
+            width: 29.375rem;
+            height: 26.5625rem;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            font-family: 'Lato-Light', sans-serif;
+            font-size: 15px;
+            line-height: 25px;
+            color: $color-light;
+        }
+    }
+}

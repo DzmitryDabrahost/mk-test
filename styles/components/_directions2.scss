@@ -1,0 +1,10 @@
+.directions2 {
+    display: flex;
+    justify-content: center;
+
+    &-content {
+        height: 12.5rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}

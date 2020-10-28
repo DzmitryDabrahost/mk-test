@@ -1,0 +1,51 @@
+.advantages {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: -90px;
+
+    &-content {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        column-gap: 30px;
+    }
+
+    &-card {
+        height: 17.8125rem;
+        width: 100%;
+        padding: 38px 20px 28px;
+        background-color: $color-white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        &:hover {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+            -23px 0 20px -23px rgba(0, 0, 0, .8),
+            23px 0 20px -23px rgba(0, 0, 0, .8),
+            0 0 40px rgba(0, 0, 0, .1) inset;
+        }
+
+        &__image {
+            width: 7.5rem;
+            height: 7.5rem;
+            border: 3px solid $color-inactive;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__subtitle {
+            font-family: 'Lato-Regular', sans-serif;
+            line-height: 25px;
+            text-align: center;
+            letter-spacing: 0.02em;
+            color: $color-main;
+            height: 50px;
+            padding: 0 20px;
+        }
+    }
+}

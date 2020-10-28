@@ -1,0 +1,133 @@
+h1 {
+    display: none;
+}
+
+.header {
+    position: sticky;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: $color-white;
+
+    &-wrapper {
+        position: relative;
+        width: 1230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-top {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        line-height: 2.1875rem;
+        align-items: center;
+
+        &-form {
+            color: $color-light;
+
+            &__title {
+                font-family: 'Sounce-Sans-Pro-Light', sans-serif;
+            }
+
+            & select {
+                font-family: 'Sounce-Sans-Pro-Regular', sans-serif;
+                color: $color-light;
+                font-size: 16px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }   
+        }
+
+        &-eyes {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &-contacts {
+            display: flex;
+            column-gap: 15px;
+            min-width: 50%;
+            justify-content: flex-end;
+
+            &-column {
+                display: flex;
+                column-gap: 15px;
+            }
+
+            & a {
+                text-decoration: none;
+                color: $color-light2;
+                font-size: 14px;
+                font-family: 'Commisioner-Regular', sans-serif;
+            }
+
+            &-icon {
+                display: flex;
+                column-gap: 10px;
+            }
+        }
+    }
+
+    &-bottom {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}
+
+.navigation {
+    &-list {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 50px;
+    }
+
+    &-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-main;
+        font-family: 'Commisioner-Medium', sans-serif;
+        font-size: 14px;
+        letter-spacing: 0.03em;
+
+        &:hover {
+            color: $color-light2;
+        }
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .header-wrapper {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    .header {
+        &-top {
+            &-contacts {
+                flex-wrap: wrap;
+                
+
+                &-column {
+                    width: 100%;
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+
+    .navigation {
+        &-list {
+            column-gap: 10px;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+body {
+    background-color: $color-backround;
+}
+
+.wrapper {
+    width: 1170px;
+}
+
+h2 {
+    font-family: 'Commissioner-Regular', sans-serif;
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: 0.78px;
+    color: $color-primary;
+}
+
+h3 {
+    font-family: 'Commissioner-Regular', sans-serif;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 1.1px;
+    color: $color-primary;
+}
+
+h6 {
+    font-family: 'Commissioner-Regular', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1.1px;
+    color: $color-primary;
+}
+
+.button {
+    background-color: $color-gold;
+    border: none;
+    outline: none;
+    width: 12.5rem;
+    color: $color-white;
+    text-transform: uppercase;
+    font-family: 'Commisioner-Bold', sans-serif;
+    font-size: 13px;
+    line-height: 30px;
+    letter-spacing: 1.1px;
+    cursor: pointer;
+    padding: 9px 0;
+
+    &:hover {
+        background-color: $accent75;
+    }
+}
+
+.button-additional {
+    font-family: 'Lato-Bold', sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+    color: $color-light2;
+    border: none;
+    outline: none;
+    background: 0;
+    padding: 0;
+    margin: 0;
+
+    &:hover {
+        cursor: pointer;
+        color: $color-primary;
+    }
+}
