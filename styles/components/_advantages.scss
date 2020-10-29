@@ -12,17 +12,16 @@
     }
 
     &-card {
-        height: 17.8125rem;
+        row-gap: 25px;
         width: 100%;
-        padding: 38px 20px 28px;
+        padding: 40px 20px;
         background-color: $color-white;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center;
 
         &:hover {
-            box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+            box-shadow: 0 1px 2px rgba(0, 0, 0, .3),
             -23px 0 20px -23px rgba(0, 0, 0, .8),
             23px 0 20px -23px rgba(0, 0, 0, .8),
             0 0 40px rgba(0, 0, 0, .1) inset;
@@ -36,6 +35,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 12px;
         }
 
         &__subtitle {
@@ -44,8 +44,6 @@
             text-align: center;
             letter-spacing: 0.02em;
             color: $color-main;
-            height: 50px;
-            padding: 0 20px;
         }
     }
 }

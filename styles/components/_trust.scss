@@ -1,0 +1,83 @@
+.trust {
+    display: flex;
+    justify-content: center;
+    background-color: $color-white;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        &-trait {
+            width: 100%;
+            border-bottom: 1px solid $color-inactive;
+        }
+
+        &-card {
+            width: 90.5%;
+            margin-top: 60px;
+            margin-bottom: 60px;
+            display: flex;
+            justify-content: space-between;
+            column-gap: 150px;
+
+            &-description {
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                row-gap: 30px;
+            }
+
+            &-text {
+                width: 470px;
+                font-family: 'Lato-Light', sans-serif;
+                font-size: 15px;
+                line-height: 25px;
+                color: $color-light;
+            }
+
+            &-chips {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                row-gap: 25px;
+
+                &-content {
+                    display: flex;
+                    width: 440px;
+                    column-gap: 30px;
+                }
+
+                &-circle {
+                    position: relative;
+                    width: 40px;
+                    min-width: 40px;
+                    height: 40px;
+                    border: 1px solid $accent40;
+                    border-radius: 50%;
+
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 10px;
+                        border-top: 10px solid $color-gold;
+                        border-radius: 50%;
+                    }
+                }
+
+                &-title {
+                    font-family: 'Lato-Bold', sans-serif;
+                    font-size: 17px;
+                    line-height: 30px;
+                    color: $color-main;
+                }
+            }
+        }
+    }
+}

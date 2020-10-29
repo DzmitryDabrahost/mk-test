@@ -1,0 +1,20 @@
+.count {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        max-width: 670px;
+
+        &-description {
+            font-family: 'Lato-Light', sans-serif;
+            font-size: 15px;
+            line-height: 25px;
+            color: $color-light;
+        }
+    }
+}

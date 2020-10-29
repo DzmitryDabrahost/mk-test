@@ -1,0 +1,22 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 60px;
+    border-top: 1px solid $color-inactive;
+    margin-top: 50px;
+
+    &-company {
+        display: flex;
+        flex-direction: column;
+
+        &-name {
+            font-family: 'Commisioner-Regular', sans-serif;
+            font-size: 20px;
+            line-height: 30px;
+            color: $color-primary;
+            text-transform: uppercase;
+            margin-bottom: 70px;
+        }
+    }
+}

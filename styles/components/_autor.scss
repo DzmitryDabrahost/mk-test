@@ -1,0 +1,17 @@
+.autor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    background-color: $color-inactive;
+
+    &-content {
+        font-family: 'Lato-Light', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 20px;
+        letter-spacing: 0.02em;
+        color: $color-light;
+    }
+}

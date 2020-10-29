@@ -1,0 +1,36 @@
+.dignity {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+
+    &-card {
+        height: 335px;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-title {
+            margin-bottom: 35px;
+        }
+    }
+
+    &-description {
+        margin-top: 40px;
+        padding: 40px 0 45px 50px;
+        background-color: $color-white;
+
+        &-text {
+            font-family: 'Lato-Light', sans-serif;
+            font-size: 15px;
+            line-height: 25px;
+            color: $color-light;
+            max-width: 750px;
+
+        }
+    }
+
+}
