@@ -4,11 +4,23 @@
     width: 100%;
     margin-bottom: 60px;
     border-top: 1px solid $color-inactive;
-    margin-top: 50px;
+    column-gap: 30px;
+
+    & a {
+        text-decoration: none;
+    }
+
+    &-content {
+        display: flex;
+        column-gap: 30px;
+    }
 
     &-company {
         display: flex;
         flex-direction: column;
+        width: 270px;
+        min-width: 270px;
+        margin-top: 50px;
 
         &-name {
             font-family: 'Commisioner-Regular', sans-serif;
@@ -16,7 +28,173 @@
             line-height: 30px;
             color: $color-primary;
             text-transform: uppercase;
-            margin-bottom: 70px;
         }
+
+        &-data {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            &-id {
+                display: flex;
+                flex-direction: column;
+                margin-top: 70px;
+                margin-bottom: 60px;
+                row-gap: 10px;
+
+                &-title {
+                    font-family: 'Commisioner-Medium', sans-serif;
+                    font-size: 13px;
+                    line-height: 20px;
+                    letter-spacing: 0.01em;
+                    color: $color-light2;
+                }
+
+                &-subtitle {
+                    font-family: 'Lato-Light', sans-serif;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: $color-light2;
+                    padding-left: 15px;
+                }
+            }
+
+            &-icons {
+                display: flex;
+                width: 100%;
+                column-gap: 15px;
+            }
+
+            &-sitemap {
+                margin-top: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                width: 100%;
+                row-gap: 30px;
+                font-family: 'Lato-Regular', sans-serif;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 20px;
+                letter-spacing: 0.02em;
+                text-transform: uppercase;
+                color: $color-main;
+
+                & p {
+                    max-width: 162px;
+                }
+
+                & img {
+                    height: fit-content;
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
+
+    &-office {
+        margin-top: 85px;
+        width: 670px;
+        min-width: 670px;
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            font-family: 'Lato-Regular', sans-serif;
+            font-size: 15px;
+            line-height: 31px;
+            text-transform: uppercase;
+            color: $color-light2;
+            border-bottom: 1px solid $color-inactive;
+            opacity: 0.7;
+        }
+
+        &-content {
+            display: flex;
+            column-gap: 35px;
+        }
+
+        &-contacts {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            width: 200px;
+
+            &-title,
+            &-region-title {
+                font-family: 'Commisioner-Regular', sans-serif;
+                font-size: 14px;
+                line-height: 25px;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: $color-main;
+            }
+
+            &-phones {
+                display: flex;
+                flex-direction: column;
+
+                & a {
+                    font-family: 'Lato-Light', sans-serif;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: $color-light2;
+                }
+            }
+
+            &-adress {
+                display: flex;
+                flex-direction: column;
+                row-gap: 5px;
+
+                &-title {
+                    font-family: 'Commisioner-Medium', sans-serif;
+                    font-size: 13px;
+                    line-height: 20px;
+                    letter-spacing: 0.01em;
+                    color: $color-main;
+                }
+
+                &-location {
+                    width: 85%;
+                    font-family: 'Lato-Light', sans-serif;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: $color-light2;
+                }
+
+                &-email a {
+                    font-family: 'Commisioner-Regular', sans-serif;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: $color-light;
+                }
+            }
+
+            &-region {
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+                max-height: 470px;
+                flex-wrap: wrap;
+                column-gap: 35px;
+                row-gap: 35px;
+
+                &-title {
+                    margin-bottom: 9px;
+                }
+            }
+        }
+    }
+
+    &-time {
+        margin-top: 85px;
+        width: 200px;
+        min-width: 200px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
     }
 }

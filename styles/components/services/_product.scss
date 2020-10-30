@@ -1,0 +1,80 @@
+.product {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+
+        &-title {
+            text-transform: uppercase;
+            font-family: 'Commisioner-Regular', sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.03em;
+            color: $color-light2;
+        }
+
+        &-block {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 30px;
+            row-gap: 30px;
+            margin-bottom: 40px;
+            margin-top: 40px;
+        }
+
+        &-card {
+            background-color: $color-white;
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 25px 25px 40px;
+            width: 48.5%;
+            min-width: 48.5%;
+            height: 170px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+
+            &-description {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+        }
+
+        &-arrow {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            &-item {
+                height: 40px;
+                width: 40px;
+                font-family: 'Commisioner-Bold', sans-serif;
+                font-size: 16px;
+                line-height: 25px;
+                display: flex;
+                align-items: center;
+                text-align: center;
+                letter-spacing: 0.02em;
+                color: $color-light3;
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: .7;
+                }
+            }
+        }
+    }
+}
+
+.item-active {
+    color: $color-primary;
+}
+
+.arrow-inactive {
+    opacity: 0.1;
+}

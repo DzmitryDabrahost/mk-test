@@ -1,0 +1,28 @@
+.services-slide {
+    display: flex;
+    max-width: 1920px;
+    justify-content: center;
+    background-image: url(../../../assets/images/services/image/slider.png);
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 85px;
+    }
+
+    &-crumb {
+        margin-top: 35px;
+        font-family: 'Lato-Light', sans-serif;
+        font-size: 13px;
+        line-height: 20px;
+        color: $color-light2;
+    }
+
+    &-title {
+        margin-top: 65px;
+    }
+
+    &-button {
+        margin-top: 30px;
+    }
+}

@@ -15,7 +15,7 @@
 @font-face{
     font-family: 'Commisioner-Medium';
     src: url('../../assets/fonts/Commissioner/Commissioner-Medium.ttf') format('truetype');
-    font-weight: normal;
+    font-weight: 500;
     font-style: normal;
 }
 
@@ -51,5 +51,12 @@
     font-family: 'Sounce-Sans-Pro-Regular';
     src: url('../../assets/fonts/Source_Sans_pro/SourceSansPro-Regular.ttf') format('truetype');
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Fira-Sans-extra-bold';
+    src: url('../../assets/fonts/Fira_Sans/FiraSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
     font-style: normal;
 }

@@ -1,0 +1,38 @@
+.nav {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+
+    &-list {
+        height: 45px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        column-gap: 30px;
+
+        & li {
+            &:hover {
+                border-bottom: 5px solid $color-light3;
+            }
+        
+            & a {
+                text-decoration: none;
+                font-family: 'Lato-Regular';
+                font-size: 16px;
+                line-height: 25px;
+                letter-spacing: 0.02em;
+                color: $color-main;
+            }
+        }
+    }
+}
+
+.active-item {
+    border-bottom: 5px solid $color-gold;
+}
+
+.active-link {
+    color: $color-gold !important;
+}
