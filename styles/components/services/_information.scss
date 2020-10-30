@@ -6,6 +6,75 @@
     background-color: $color-white;
 
     &-content {
-        
+        padding-top: 125px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 100px;
+
+        &-title {
+            @include font('Commissioner-Regular, sans-serif', 14px, 20px, $color-light2);
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        &-text {
+            margin-bottom: 30px;
+            max-width: 730px;
+            @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+        }
+
+        &-subtitle {
+            min-width: 570px;
+            @include font('Lato-Regular, sans-serif', 17px, 30px, $color-main);
+            font-weight: 600;
+            letter-spacing: 0.01em;
+            margin-bottom: 30px;
+        }
+
+        &-block {
+            display: flex;
+            column-gap: 130px;
+
+            &-item {
+                display: flex;
+                align-items: center;
+                column-gap: 30px;
+                margin-left: 68px;
+
+                &-circle {
+                    display: block;
+                    width: 10px;
+                    min-width: 10px;
+                    height: 10px;
+                    border-top: 10px solid $color-gold;
+                    border-radius: 50%;
+                }
+
+                &-text {
+                    @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+                }
+            }
+
+            &-description {
+                max-width: 510px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 25px;
+            }
+
+            &-subdescription {
+                width: 370px;
+                border: 1px solid $color-inactive;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                &-text {
+                    width: 270px;
+                    @include font('Lato-Regular, sans-serif', 15px, 25px, $color-light);
+                }
+            }
+        }
     }
 }

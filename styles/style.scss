@@ -1,5 +1,6 @@
 @import 'helpers/reset';
 @import 'helpers/constants';
+@import 'helpers/mixins';
 @import 'helpers/helpers';
 @import 'helpers/fonts';
 
@@ -26,3 +27,8 @@
 @import 'components/services/product';
 @import 'components/services/reklama';
 @import 'components/services/information';
+@import 'components/services/middle';
+@import 'components/services/registration';
+@import 'components/services/documents';
+@import 'components/services/aspects';
+@import 'components/services/trait';

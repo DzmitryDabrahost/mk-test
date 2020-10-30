@@ -12,11 +12,8 @@
 
         &-title {
             text-transform: uppercase;
-            font-family: 'Commisioner-Regular', sans-serif;
-            font-size: 14px;
-            line-height: 20px;
+            @include font('Commisioner-Regular', 14px, 20px, $color-light2);
             letter-spacing: 0.03em;
-            color: $color-light2;
         }
 
         &-block {
@@ -42,6 +39,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                max-width: 380px;
             }
         }
 
@@ -53,14 +51,11 @@
             &-item {
                 height: 40px;
                 width: 40px;
-                font-family: 'Commisioner-Bold', sans-serif;
-                font-size: 16px;
-                line-height: 25px;
+                @include font('Commisioner-Bold, sans-serif', 16px, 25px, $color-light3);
                 display: flex;
                 align-items: center;
                 text-align: center;
                 letter-spacing: 0.02em;
-                color: $color-light3;
 
                 &:hover {
                     cursor: pointer;

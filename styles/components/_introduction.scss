@@ -25,10 +25,7 @@
             height: 26.5625rem;
             justify-content: space-between;
             flex-wrap: wrap;
-            font-family: 'Lato-Light', sans-serif;
-            font-size: 15px;
-            line-height: 25px;
-            color: $color-light;
+            @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
         }
     }
 }

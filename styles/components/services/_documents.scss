@@ -1,0 +1,42 @@
+.documents {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        row-gap: 30px;
+
+        &-description {
+            max-width: 48%;
+            @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+        }
+
+        &-block {
+            display: flex;
+            margin-bottom: 100px;
+
+            &-title {
+                @include font('Lato-Bold, sans-serif', 17px, 30px, $color-light);
+                font-weight: 600;
+            }
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                background-color: $color-white;
+                padding: 40px 40px 0 70px;
+                row-gap: 30px;
+                max-height: 525px;
+            }
+
+            &-list {
+                display: flex;
+                flex-direction: column;
+                row-gap: 25px;
+            }
+        }
+    }
+}

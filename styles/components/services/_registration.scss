@@ -1,0 +1,51 @@
+.registration {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        &-description {
+            width: 670px;
+            display: flex;
+            flex-direction: column;
+
+            &-title {
+                @include font('Commisioner-Regular, sans-serif', 14px, 20px, $color-light2);
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                margin-bottom: 40px;
+            }
+
+            &-text {
+                @include font('Lato-Bold, sans-serif', 17px, 30px, $color-main);
+                font-weight: 600;
+                letter-spacing: 0.01em;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+        }
+
+        &-list {
+            display: flex; 
+            flex-direction: column;
+            row-gap: 30px;
+            column-gap: 30px;
+            max-height: 380px;
+            flex-wrap: wrap;
+        }
+
+        &-item {
+            min-width: 48.5%;
+        }
+
+        &-text {
+            min-width: 430px;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.aspects {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    &-content {
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        column-gap: 30px;
+
+        &-title {
+            width: 370px;
+            max-width: 370px;
+            padding-right: 30px;
+            margin-top: 40px;
+        }
+
+        &-block {
+            position: relative;
+            background-color: $color-white;
+            max-width: 770px;
+            width: 770px;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 40px 50px 40px;
+
+            &-title {
+                margin-bottom: 30px;
+                @include font('Lato-Bold, sans-serif', 17px, 30px, $color-light);
+                font-weight: 600;
+                letter-spacing: 0.01em;
+            }
+
+            &-list {
+                display: flex;
+                flex-direction: column;
+                row-gap: 25px;
+                
+            }
+
+            &-item {
+                display: flex;
+                column-gap: 30px;
+
+                &-text {
+                    @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+                }
+            }
+        }
+    }
+}

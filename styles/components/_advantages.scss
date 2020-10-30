@@ -39,11 +39,9 @@
         }
 
         &__subtitle {
-            font-family: 'Lato-Regular', sans-serif;
-            line-height: 25px;
+            @include font('Lato-Regular, sans-serif',16px, 25px, $color-main);
             text-align: center;
             letter-spacing: 0.02em;
-            color: $color-main;
         }
     }
 }

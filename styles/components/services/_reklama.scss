@@ -11,12 +11,9 @@
         background: $color-inactive;
 
         &-title {
-            font-family: 'Fira-Sans-extra-bold';
-            font-size: 100px;
-            line-height: 120px;
+            @include font('Fira-Sans-extra-bold, sans-serif', 100px, 120px, $color-inactive);
             letter-spacing: 0.1em;
             text-transform: uppercase;
-            color: $color-inactive;
             margin-top: 37px;
             margin-bottom: 43px;
         }

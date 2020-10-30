@@ -27,19 +27,13 @@
                 border-radius: 50%;
 
                 & span {
-                    color: $color-gold;
-                    font-family: 'Commisioner-Bold', sans-serif;
+                    @include font('Commisioner-Bold, sans-serif', 22px, 67px, $color-gold);
                     font-weight: 800;
-                    font-size: 22px;
-                    line-height: 67px;
                 }
             }
 
             &-subtitle {
-                font-family: 'Lato-Regular', sans-serif;
-                font-size: 15px;
-                line-height: 25px;
-                color: $color-light;
+                @include font('Lato-Regular, sans-serif', 15px, 25px, $color-light);
                 max-width: 400px;
             }
 
@@ -50,11 +44,8 @@
             }
 
             &-signature {
-                font-family: 'Lato-Light', sans-serif;
-                font-size: 14px;
-                line-height: 25px;
+                @include font('Lato-Light, sans-serif', 14px, 25px, $color-light);
                 letter-spacing: 0.01em;
-                color: $color-light;
             }
         }
 
@@ -78,45 +69,30 @@
                     padding-left: 10px;
 
                     &::placeholder {
-                        font-family: 'Lato-Light', sans-serif;
-                        font-size: 15px;
-                        line-height: 25px;
-                        color: $color-light2;
+                        @include font('Lato-Light, sans-serif', 15px, 25px, $color-light2);
                         opacity: 0.6;
                         padding-left: 10px;
                     }
                 }
 
                 &-name {
-                    font-family: 'Commisioner-Bold', sans-serif;
-                    font-size: 13px;
-                    line-height: 20px;
+                    @include font('Commisioner-Bold, sans-serif', 13px, 20px, $color-light);
                     letter-spacing: 0.01em;
-                    color: $color-light2;
                 }
 
                 &-tel {
-                    font-family: 'Commisioner-Regular', sans-serif;
-                    font-size: 13px;
-                    line-height: 20px;
+                    @include font('Commisioner-Regular, sans-serif', 13px, 20px, $color-light2);
                     letter-spacing: 0.01em;
-                    color: $color-light2;
                 }
 
                 &-politic {
-                    font-family: 'Lato-Light', sans-serif;
-                    font-size: 13px;
-                    line-height: 20px;
-                    color: $color-light2;
+                    @include font('Lato-Light, sans-serif', 13px, 20px, $color-light2);
 
                     & a {
                         text-decoration: none;
-                        font-family: 'Lato-Bold', sans-serif;
+                        @include font('Lato-Bold, sans-serif', 13px, 20px, $color-light2);
                         font-weight: bold;
-                        font-size: 13px;
-                        line-height: 20px;
                         text-decoration-line: underline;
-                        color: $color-light2;
                     }
                 }
             }

@@ -171,63 +171,63 @@ h6 {
 }
 
 @font-face {
-  font-family: 'Commisioner-Regular';
+  font-family: 'Commisioner-Regular, sans-serif';
   src: url("../../assets/fonts/Commissioner/Commissioner-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Commisioner-Bold';
+  font-family: 'Commisioner-Bold, sans-serif';
   src: url("../../assets/fonts/Commissioner/Commissioner-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Commisioner-Medium';
+  font-family: 'Commisioner-Medium, sans-serif';
   src: url("../../assets/fonts/Commissioner/Commissioner-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Lato-Regular';
+  font-family: 'Lato-Regular, sans-serif';
   src: url("../../assets/fonts/Lato/Lato-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Lato-Light';
+  font-family: 'Lato-Light, sans-serif';
   src: url("../../assets/fonts/Lato/Lato-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Lato-Bold';
+  font-family: 'Lato-Bold, sans-serif';
   src: url("../../assets/fonts/Lato/Lato-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Sounce-Sans-Pro-Light';
+  font-family: 'Sounce-Sans-Pro-Light, sans-serif';
   src: url("../../assets/fonts/Source_Sans_pro/SourceSansPro-Light.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Sounce-Sans-Pro-Regular';
+  font-family: 'Sounce-Sans-Pro-Regular, sans-serif';
   src: url("../../assets/fonts/Source_Sans_pro/SourceSansPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Fira-Sans-extra-bold';
+  font-family: 'Fira-Sans-extra-bold, sans-serif';
   src: url("../../assets/fonts/Fira_Sans/FiraSans-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
@@ -287,13 +287,17 @@ h1 {
 }
 
 .header-top-form__title {
-  font-family: 'Sounce-Sans-Pro-Light', sans-serif;
+  font-family: "Sounce-Sans-Pro-Light, sans-serif";
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .header-top-form select {
-  font-family: 'Sounce-Sans-Pro-Regular', sans-serif;
-  color: rgba(0, 0, 0, 0.8);
+  font-family: "Sounce-Sans-Pro-Regular, sans-serif";
   font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
   border: none;
   outline: none;
   cursor: pointer;
@@ -329,9 +333,10 @@ h1 {
 
 .header-top-contacts a {
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.5);
+  font-family: "Commisioner-Regular, sans-serif";
   font-size: 14px;
-  font-family: 'Commisioner-Regular', sans-serif;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .header-top-contacts-icon {
@@ -370,9 +375,10 @@ h1 {
 .navigation-link {
   text-decoration: none;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.75);
-  font-family: 'Commisioner-Medium', sans-serif;
+  font-family: "Commisioner-Medium, sans-serif";
   font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.75);
   letter-spacing: 0.03em;
 }
 
@@ -528,11 +534,12 @@ h1 {
 }
 
 .advantages-card__subtitle {
-  font-family: 'Lato-Regular', sans-serif;
+  font-family: "Lato-Regular, sans-serif";
+  font-size: 16px;
   line-height: 25px;
+  color: rgba(0, 0, 0, 0.75);
   text-align: center;
   letter-spacing: 0.02em;
-  color: rgba(0, 0, 0, 0.75);
 }
 
 .introduction {
@@ -584,7 +591,7 @@ h1 {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -707,7 +714,7 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -820,18 +827,18 @@ h1 {
 }
 
 .reviews-card-profession {
-  font-family: 'Lato-Regular';
+  font-family: "Lato-Regular, sans-serif";
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.5);
 }
 
 .reviews-card-text {
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 14px;
   line-height: 25px;
-  letter-spacing: 1.1px;
   color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.01em;
 }
 
 .reviews-card-buttons {
@@ -944,7 +951,7 @@ h1 {
 
 .clients-content-text {
   width: 670px;
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -1029,7 +1036,7 @@ h1 {
 }
 
 .triangle-content-card-text, .triangle-content-card-text__bottom {
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -1205,7 +1212,7 @@ h1 {
 
 .list-content-bottom-description {
   width: 65.8%;
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -1270,7 +1277,7 @@ h1 {
 
 .trust-content-card-text {
   width: 470px;
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -1321,7 +1328,7 @@ h1 {
 }
 
 .trust-content-card-chips-title {
-  font-family: 'Lato-Bold', sans-serif;
+  font-family: "Lato-Bold, sans-serif";
   font-size: 17px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.75);
@@ -1364,7 +1371,7 @@ h1 {
 }
 
 .dignity-description-text {
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -1425,15 +1432,15 @@ h1 {
 }
 
 .cooperation-content-description-circle span {
-  color: #DEC377;
-  font-family: 'Commisioner-Bold', sans-serif;
-  font-weight: 800;
+  font-family: "Commisioner-Bold, sans-serif";
   font-size: 22px;
   line-height: 67px;
+  color: #DEC377;
+  font-weight: 800;
 }
 
 .cooperation-content-description-subtitle {
-  font-family: 'Lato-Regular', sans-serif;
+  font-family: "Lato-Regular, sans-serif";
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -1452,11 +1459,11 @@ h1 {
 }
 
 .cooperation-content-description-signature {
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 14px;
   line-height: 25px;
-  letter-spacing: 0.01em;
   color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.01em;
 }
 
 .cooperation-content-opposite {
@@ -1489,7 +1496,7 @@ h1 {
 }
 
 .cooperation-content-opposite-form input::-webkit-input-placeholder {
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.5);
@@ -1498,7 +1505,7 @@ h1 {
 }
 
 .cooperation-content-opposite-form input:-ms-input-placeholder {
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.5);
@@ -1507,7 +1514,7 @@ h1 {
 }
 
 .cooperation-content-opposite-form input::-ms-input-placeholder {
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.5);
@@ -1516,7 +1523,7 @@ h1 {
 }
 
 .cooperation-content-opposite-form input::placeholder {
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.5);
@@ -1525,23 +1532,23 @@ h1 {
 }
 
 .cooperation-content-opposite-form-name {
-  font-family: 'Commisioner-Bold', sans-serif;
+  font-family: "Commisioner-Bold, sans-serif";
   font-size: 13px;
   line-height: 20px;
+  color: rgba(0, 0, 0, 0.8);
   letter-spacing: 0.01em;
-  color: rgba(0, 0, 0, 0.5);
 }
 
 .cooperation-content-opposite-form-tel {
-  font-family: 'Commisioner-Regular', sans-serif;
+  font-family: "Commisioner-Regular, sans-serif";
   font-size: 13px;
   line-height: 20px;
-  letter-spacing: 0.01em;
   color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.01em;
 }
 
 .cooperation-content-opposite-form-politic {
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -1549,13 +1556,13 @@ h1 {
 
 .cooperation-content-opposite-form-politic a {
   text-decoration: none;
-  font-family: 'Lato-Bold', sans-serif;
-  font-weight: bold;
+  font-family: "Lato-Bold, sans-serif";
   font-size: 13px;
   line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: rgba(0, 0, 0, 0.5);
 }
 
 .opposite-button {
@@ -1586,7 +1593,7 @@ h1 {
 }
 
 .count-content-description {
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -1632,7 +1639,7 @@ h1 {
 }
 
 .footer-company-name {
-  font-family: 'Commisioner-Regular', sans-serif;
+  font-family: "Commisioner-Regular, sans-serif";
   font-size: 20px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.9);
@@ -1664,15 +1671,15 @@ h1 {
 }
 
 .footer-company-data-id-title {
-  font-family: 'Commisioner-Medium', sans-serif;
+  font-family: "Commisioner-Medium, sans-serif";
   font-size: 13px;
   line-height: 20px;
-  letter-spacing: 0.01em;
   color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.01em;
 }
 
 .footer-company-data-id-subtitle {
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -1700,13 +1707,13 @@ h1 {
           align-items: center;
   width: 100%;
   row-gap: 30px;
-  font-family: 'Lato-Regular', sans-serif;
-  font-weight: 600;
+  font-family: "Lato-Regular, sans-serif";
   font-size: 12px;
   line-height: 20px;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 600;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.75);
 }
 
 .footer-company-data-sitemap p {
@@ -1734,11 +1741,11 @@ h1 {
 }
 
 .footer-office-title {
-  font-family: 'Lato-Regular', sans-serif;
+  font-family: "Lato-Regular, sans-serif";
   font-size: 15px;
   line-height: 31px;
-  text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   opacity: 0.7;
 }
@@ -1765,12 +1772,12 @@ h1 {
 }
 
 .footer-office-contacts-title, .footer-office-contacts-region-title {
-  font-family: 'Commisioner-Regular', sans-serif;
+  font-family: "Commisioner-Regular, sans-serif";
   font-size: 14px;
   line-height: 25px;
+  color: rgba(0, 0, 0, 0.75);
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.75);
 }
 
 .footer-office-contacts-phones {
@@ -1784,7 +1791,7 @@ h1 {
 }
 
 .footer-office-contacts-phones a {
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -1802,23 +1809,23 @@ h1 {
 }
 
 .footer-office-contacts-adress-title {
-  font-family: 'Commisioner-Medium', sans-serif;
+  font-family: "Commisioner-Medium, sans-serif";
   font-size: 13px;
   line-height: 20px;
-  letter-spacing: 0.01em;
   color: rgba(0, 0, 0, 0.75);
+  letter-spacing: 0.01em;
 }
 
 .footer-office-contacts-adress-location {
   width: 85%;
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
 }
 
 .footer-office-contacts-adress-email a {
-  font-family: 'Commisioner-Regular', sans-serif;
+  font-family: "Commisioner-Regular, sans-serif";
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.8);
@@ -1876,12 +1883,12 @@ h1 {
 }
 
 .autor-content {
-  font-family: 'Lato-Light', sans-serif;
-  font-weight: 300;
+  font-family: "Lato-Light, sans-serif";
   font-size: 12px;
   line-height: 20px;
-  letter-spacing: 0.02em;
   color: rgba(0, 0, 0, 0.8);
+  font-weight: 300;
+  letter-spacing: 0.02em;
 }
 
 .services-slide {
@@ -1908,10 +1915,19 @@ h1 {
 
 .services-slide-crumb {
   margin-top: 35px;
-  font-family: 'Lato-Light', sans-serif;
+  font-family: "Lato-Light, sans-serif";
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
+}
+
+.services-slide-crumb span {
+  padding-right: 5px;
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.services-slide-crumb span:last-child {
+  border: none;
 }
 
 .services-slide-title {
@@ -1955,11 +1971,11 @@ h1 {
 
 .nav-list li a {
   text-decoration: none;
-  font-family: 'Lato-Regular';
+  font-family: "Lato-Regular, sans-serif";
   font-size: 16px;
   line-height: 25px;
-  letter-spacing: 0.02em;
   color: rgba(0, 0, 0, 0.75);
+  letter-spacing: 0.02em;
 }
 
 .active-item {
@@ -1997,11 +2013,11 @@ h1 {
 
 .product-content-title {
   text-transform: uppercase;
-  font-family: 'Commisioner-Regular', sans-serif;
+  font-family: "Commisioner-Regular";
   font-size: 14px;
   line-height: 20px;
-  letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.03em;
 }
 
 .product-content-block {
@@ -2044,6 +2060,7 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 380px;
 }
 
 .product-content-arrow {
@@ -2059,9 +2076,10 @@ h1 {
 .product-content-arrow-item {
   height: 40px;
   width: 40px;
-  font-family: 'Commisioner-Bold', sans-serif;
+  font-family: "Commisioner-Bold, sans-serif";
   font-size: 16px;
   line-height: 25px;
+  color: rgba(0, 0, 0, 0.3);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2070,7 +2088,6 @@ h1 {
           align-items: center;
   text-align: center;
   letter-spacing: 0.02em;
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .product-content-arrow-item:hover {
@@ -2109,12 +2126,12 @@ h1 {
 }
 
 .reklama-content-title {
-  font-family: 'Fira-Sans-extra-bold';
+  font-family: "Fira-Sans-extra-bold, sans-serif";
   font-size: 100px;
   line-height: 120px;
+  color: rgba(0, 0, 0, 0.1);
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.1);
   margin-top: 37px;
   margin-bottom: 43px;
 }
@@ -2129,5 +2146,388 @@ h1 {
   width: 100%;
   margin-top: -45px;
   background-color: #FFFFFF;
+}
+
+.information-content {
+  padding-top: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.information-content-title {
+  font-family: "Commissioner-Regular, sans-serif";
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.information-content-text {
+  margin-bottom: 30px;
+  max-width: 730px;
+  font-family: "Lato-Light, sans-serif";
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.information-content-subtitle {
+  min-width: 570px;
+  font-family: "Lato-Regular, sans-serif";
+  font-size: 17px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-bottom: 30px;
+}
+
+.information-content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 130px;
+          column-gap: 130px;
+}
+
+.information-content-block-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  margin-left: 68px;
+}
+
+.information-content-block-item-circle {
+  display: block;
+  width: 10px;
+  min-width: 10px;
+  height: 10px;
+  border-top: 10px solid #DEC377;
+  border-radius: 50%;
+}
+
+.information-content-block-item-text {
+  font-family: "Lato-Light, sans-serif";
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.information-content-block-description {
+  max-width: 510px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 25px;
+}
+
+.information-content-block-subdescription {
+  width: 370px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.information-content-block-subdescription-text {
+  width: 270px;
+  font-family: "Lato-Regular, sans-serif";
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-image: url(../../../assets/images/services/image/priziv.png);
+  height: 120px;
+}
+
+.middle-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.middle-content-title h5 {
+  color: #FFFFFF;
+}
+
+.middle-button {
+  width: 300px;
+}
+
+.registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.registration-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.registration-content-description {
+  width: 670px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.registration-content-description-title {
+  font-family: "Commisioner-Regular, sans-serif";
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.registration-content-description-text {
+  font-family: "Lato-Bold, sans-serif";
+  font-size: 17px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.registration-content-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 30px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  max-height: 380px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.registration-content-item {
+  min-width: 48.5%;
+}
+
+.registration-content-text {
+  min-width: 430px;
+}
+
+.documents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.documents-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  row-gap: 30px;
+}
+
+.documents-content-description {
+  max-width: 48%;
+  font-family: "Lato-Light, sans-serif";
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.documents-content-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.documents-content-block-title {
+  font-family: "Lato-Bold, sans-serif";
+  font-size: 17px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+}
+
+.documents-content-block-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #FFFFFF;
+  padding: 40px 40px 0 70px;
+  row-gap: 30px;
+  max-height: 525px;
+}
+
+.documents-content-block-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 25px;
+}
+
+.aspects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.aspects-content {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.aspects-content-title {
+  width: 370px;
+  max-width: 370px;
+  padding-right: 30px;
+  margin-top: 40px;
+}
+
+.aspects-content-block {
+  position: relative;
+  background-color: #FFFFFF;
+  max-width: 770px;
+  width: 770px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 40px 40px 50px 40px;
+}
+
+.aspects-content-block-title {
+  margin-bottom: 30px;
+  font-family: "Lato-Bold, sans-serif";
+  font-size: 17px;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.aspects-content-block-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 25px;
+}
+
+.aspects-content-block-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+}
+
+.aspects-content-block-item-text {
+  font-family: "Lato-Light, sans-serif";
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.trait {
+  width: 100%;
+  height: 100px;
+  background-image: url(../../../assets/images/services/image/subimage.png);
+  margin-bottom: 80px;
 }
 /*# sourceMappingURL=style.css.map */

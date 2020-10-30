@@ -33,10 +33,7 @@
 
             &-text {
                 width: 470px;
-                font-family: 'Lato-Light', sans-serif;
-                font-size: 15px;
-                line-height: 25px;
-                color: $color-light;
+                @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
             }
 
             &-chips {
@@ -72,10 +69,7 @@
                 }
 
                 &-title {
-                    font-family: 'Lato-Bold', sans-serif;
-                    font-size: 17px;
-                    line-height: 30px;
-                    color: $color-main;
+                    @include font('Lato-Bold, sans-serif', 17px, 30px, $color-main);
                 }
             }
         }

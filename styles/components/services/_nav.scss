@@ -19,11 +19,8 @@
         
             & a {
                 text-decoration: none;
-                font-family: 'Lato-Regular';
-                font-size: 16px;
-                line-height: 25px;
+                @include font('Lato-Regular, sans-serif', 16px, 25px, $color-main);
                 letter-spacing: 0.02em;
-                color: $color-main;
             }
         }
     }

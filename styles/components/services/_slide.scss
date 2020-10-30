@@ -12,10 +12,16 @@
 
     &-crumb {
         margin-top: 35px;
-        font-family: 'Lato-Light', sans-serif;
-        font-size: 13px;
-        line-height: 20px;
-        color: $color-light2;
+        @include font('Lato-Light, sans-serif', 13px, 20px, $color-light2);
+        
+        & span {
+            padding-right: 5px;
+            border-right: 1px solid $color-light2;
+
+            &:last-child {
+                border: none;
+            }
+        }
     }
 
     &-title {

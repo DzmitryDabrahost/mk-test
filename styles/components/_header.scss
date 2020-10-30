@@ -29,13 +29,11 @@ h1 {
             color: $color-light;
 
             &__title {
-                font-family: 'Sounce-Sans-Pro-Light', sans-serif;
+                @include font('Sounce-Sans-Pro-Light, sans-serif', 16px, 20px, $color-light);
             }
 
             & select {
-                font-family: 'Sounce-Sans-Pro-Regular', sans-serif;
-                color: $color-light;
-                font-size: 16px;
+                @include font('Sounce-Sans-Pro-Regular, sans-serif', 16px, 20px, $color-light);
                 border: none;
                 outline: none;
                 cursor: pointer;
@@ -62,9 +60,7 @@ h1 {
 
             & a {
                 text-decoration: none;
-                color: $color-light2;
-                font-size: 14px;
-                font-family: 'Commisioner-Regular', sans-serif;
+                @include font('Commisioner-Regular, sans-serif', 14px, 20px, $color-light2);
             }
 
             &-icon {
@@ -93,9 +89,7 @@ h1 {
     &-link {
         text-decoration: none;
         text-transform: uppercase;
-        color: $color-main;
-        font-family: 'Commisioner-Medium', sans-serif;
-        font-size: 14px;
+        @include font('Commisioner-Medium, sans-serif', 14px, 20px, $color-main);
         letter-spacing: 0.03em;
 
         &:hover {

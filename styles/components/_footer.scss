@@ -23,10 +23,7 @@
         margin-top: 50px;
 
         &-name {
-            font-family: 'Commisioner-Regular', sans-serif;
-            font-size: 20px;
-            line-height: 30px;
-            color: $color-primary;
+            @include font('Commisioner-Regular, sans-serif', 20px, 30px, $color-primary);
             text-transform: uppercase;
         }
 
@@ -43,18 +40,12 @@
                 row-gap: 10px;
 
                 &-title {
-                    font-family: 'Commisioner-Medium', sans-serif;
-                    font-size: 13px;
-                    line-height: 20px;
+                    @include font('Commisioner-Medium, sans-serif', 13px, 20px, $color-light2);
                     letter-spacing: 0.01em;
-                    color: $color-light2;
                 }
 
                 &-subtitle {
-                    font-family: 'Lato-Light', sans-serif;
-                    font-size: 13px;
-                    line-height: 20px;
-                    color: $color-light2;
+                    @include font('Lato-Light, sans-serif', 13px, 20px, $color-light2);
                     padding-left: 15px;
                 }
             }
@@ -72,13 +63,10 @@
                 align-items: center;
                 width: 100%;
                 row-gap: 30px;
-                font-family: 'Lato-Regular', sans-serif;
+                @include font('Lato-Regular, sans-serif', 12px, 20px, $color-main);
                 font-weight: 600;
-                font-size: 12px;
-                line-height: 20px;
                 letter-spacing: 0.02em;
                 text-transform: uppercase;
-                color: $color-main;
 
                 & p {
                     max-width: 162px;
@@ -100,11 +88,8 @@
         flex-direction: column;
 
         &-title {
-            font-family: 'Lato-Regular', sans-serif;
-            font-size: 15px;
-            line-height: 31px;
+            @include font('Lato-Regular, sans-serif', 15px, 31px, $color-light2);
             text-transform: uppercase;
-            color: $color-light2;
             border-bottom: 1px solid $color-inactive;
             opacity: 0.7;
         }
@@ -123,12 +108,9 @@
 
             &-title,
             &-region-title {
-                font-family: 'Commisioner-Regular', sans-serif;
-                font-size: 14px;
-                line-height: 25px;
+                @include font('Commisioner-Regular, sans-serif', 14px, 25px, $color-main);
                 letter-spacing: 0.04em;
                 text-transform: uppercase;
-                color: $color-main;
             }
 
             &-phones {
@@ -136,10 +118,7 @@
                 flex-direction: column;
 
                 & a {
-                    font-family: 'Lato-Light', sans-serif;
-                    font-size: 13px;
-                    line-height: 20px;
-                    color: $color-light2;
+                    @include font('Lato-Light, sans-serif', 13px, 20px, $color-light2);
                 }
             }
 
@@ -149,26 +128,17 @@
                 row-gap: 5px;
 
                 &-title {
-                    font-family: 'Commisioner-Medium', sans-serif;
-                    font-size: 13px;
-                    line-height: 20px;
+                    @include font('Commisioner-Medium, sans-serif', 13px, 20px, $color-main);
                     letter-spacing: 0.01em;
-                    color: $color-main;
                 }
 
                 &-location {
                     width: 85%;
-                    font-family: 'Lato-Light', sans-serif;
-                    font-size: 13px;
-                    line-height: 20px;
-                    color: $color-light2;
+                    @include font('Lato-Light, sans-serif', 13px, 20px, $color-light2);
                 }
 
                 &-email a {
-                    font-family: 'Commisioner-Regular', sans-serif;
-                    font-size: 13px;
-                    line-height: 20px;
-                    color: $color-light;
+                    @include font('Commisioner-Regular, sans-serif', 13px, 20px, $color-light);
                 }
             }
 

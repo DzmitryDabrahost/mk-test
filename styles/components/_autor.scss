@@ -7,11 +7,8 @@
     background-color: $color-inactive;
 
     &-content {
-        font-family: 'Lato-Light', sans-serif;
+        @include font('Lato-Light, sans-serif', 12px, 20px, $color-light);
         font-weight: 300;
-        font-size: 12px;
-        line-height: 20px;
         letter-spacing: 0.02em;
-        color: $color-light;
     }
 }
