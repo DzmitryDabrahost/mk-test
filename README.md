@@ -1,3 +1,3 @@
 # mk-test
 
-<a href="dzmitrydabrahost-test-mk.netlify.app"> Demo task to netlify </a>
+<a href="https://dzmitrydabrahost-test-mk.netlify.app/"> Demo task to netlify </a>
