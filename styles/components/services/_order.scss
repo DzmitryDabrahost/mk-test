@@ -10,7 +10,7 @@
         margin-top: 80px;
 
         &-name {
-            @include font('Commisioner-Regular, sans-serif', 14px, 20px, $color-light2);
+            @include font(Commisioner, normal, normal, 14px, 20px, $color-light2);
             letter-spacing: 0.03em;
             text-transform: uppercase;
             margin-bottom: 40px;
@@ -24,8 +24,7 @@
         &-description {
             width: 670px;
             max-width: 670px;
-            @include font('Lato-Bold, sans-serif', 17px, 30px, $color-light);
-            font-weight: 600;
+            @include font(Lato, normal, 600, 17px, 30px, $color-light);
             letter-spacing: 0.01em;
             margin-bottom: 40px;
         }

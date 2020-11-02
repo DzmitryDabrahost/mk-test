@@ -19,7 +19,7 @@
         margin-top: 50px;
 
         &-name {
-            @include font('Commisioner-Regular, sans-serif', 20px, 30px, $color-primary);
+            @include font(Commisioner, normal, normal, 20px, 30px, $color-primary);
             text-transform: uppercase;
         }
 
@@ -36,12 +36,12 @@
                 row-gap: 10px;
 
                 &-title {
-                    @include font('Commisioner-Medium, sans-serif', 13px, 20px, $color-light2);
+                    @include font(Commisioner, normal, 500, 13px, 20px, $color-light2);
                     letter-spacing: 0.01em;
                 }
 
                 &-subtitle {
-                    @include font('Lato-Light, sans-serif', 13px, 20px, $color-light2);
+                    @include font(Lato, normal, 300, 13px, 20px, $color-light2);
                     padding-left: 15px;
                 }
             }
@@ -59,8 +59,7 @@
                 align-items: center;
                 width: 100%;
                 row-gap: 30px;
-                @include font('Lato-Regular, sans-serif', 12px, 20px, $color-main);
-                font-weight: 600;
+                @include font(Lato, normal, 600, 12px, 20px, $color-main);
                 letter-spacing: 0.02em;
                 text-transform: uppercase;
 
@@ -84,7 +83,7 @@
         flex-direction: column;
 
         &-title {
-            @include font('Lato-Regular, sans-serif', 15px, 31px, $color-light2);
+            @include font(Lato, normal, normal, 15px, 31px, $color-light2);
             text-transform: uppercase;
             border-bottom: 1px solid $color-inactive;
             opacity: 0.7;
@@ -104,7 +103,7 @@
 
             &-title,
             &-region-title {
-                @include font('Commisioner-Regular, sans-serif', 14px, 25px, $color-main);
+                @include font(Commisioner, normal, normal, 14px, 25px, $color-main);
                 letter-spacing: 0.04em;
                 text-transform: uppercase;
             }
@@ -114,7 +113,7 @@
                 flex-direction: column;
 
                 & a {
-                    @include font('Lato-Light, sans-serif', 13px, 20px, $color-light2);
+                    @include font(Lato, normal, 300, 13px, 20px, $color-light2);
                 }
             }
 
@@ -124,17 +123,17 @@
                 row-gap: 5px;
 
                 &-title {
-                    @include font('Commisioner-Medium, sans-serif', 13px, 20px, $color-main);
+                    @include font(Commisioner, normal, 300, 13px, 20px, $color-main);
                     letter-spacing: 0.01em;
                 }
 
                 &-location {
                     width: 85%;
-                    @include font('Lato-Light, sans-serif', 13px, 20px, $color-light2);
+                    @include font(Lato, normal, 300, 13px, 20px, $color-light2);
                 }
 
                 &-email a {
-                    @include font('Commisioner-Regular, sans-serif', 13px, 20px, $color-light);
+                    @include font(Commisioner, normal, normal, 13px, 20px, $color-light);
                 }
             }
 

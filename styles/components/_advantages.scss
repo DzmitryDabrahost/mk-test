@@ -36,9 +36,29 @@
         }
 
         &__subtitle {
-            @include font('Lato-Regular, sans-serif',16px, 25px, $color-main);
+            @include font(Lato, normal, normal, 16px, 25px, $color-main);
             text-align: center;
             letter-spacing: 0.02em;
+        }
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .advantages {
+        &-content {
+            flex-wrap: wrap;
+            row-gap: 30px;
+        }
+        &-card {
+            width: 47%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .advantages {
+        &-card {
+            width: 100%;
         }
     }
 }

@@ -12,7 +12,7 @@
 
     &-crumb {
         margin-top: 35px;
-        @include font('Lato-Light, sans-serif', 13px, 20px, $color-light2);
+        @include font(Lato, normal, 300, 13px, 20px, $color-light2);
         
         & span {
             padding-right: 5px;

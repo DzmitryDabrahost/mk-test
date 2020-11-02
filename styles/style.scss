@@ -2,7 +2,6 @@
 @import 'helpers/constants';
 @import 'helpers/mixins';
 @import 'helpers/helpers';
-@import 'helpers/fonts';
 
 @import 'components/header';
 @import 'components/slideSection';
@@ -21,6 +20,7 @@
 @import 'components/count';
 @import 'components/footer';
 @import 'components/autor';
+@import 'components/center';
 
 @import 'components/services/slide';
 @import 'components/services/nav';

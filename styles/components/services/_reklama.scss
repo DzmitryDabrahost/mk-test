@@ -11,7 +11,7 @@
         background: $color-inactive;
 
         &-title {
-            @include font('Fira-Sans-extra-bold, sans-serif', 100px, 120px, $color-inactive);
+            @include font(Fira Sans, normal, 800, 100px, 120px, $color-inactive);
             letter-spacing: 0.1em;
             text-transform: uppercase;
             margin-top: 37px;

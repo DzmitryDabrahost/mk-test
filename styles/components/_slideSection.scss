@@ -1,9 +1,10 @@
 .slider {
-    width: 100%;
-    background-image: url(../../assets/images/slides/slider1.png);
+    max-width: 100%;
+    background: center, no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
+    transition: 1s ease-in-out;
 
     &-section {
         display: flex;
@@ -13,11 +14,21 @@
 
     &-content {
         margin-top: 162px;
-        width: 31.25rem;
         height: 15rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+
+        &-title {
+            max-width: 570px;
+            transition: 2s;
+        }
+
+        &-subtitle {
+            @include font(Lato, normal, 300, 15px, 25px, $color-light);
+            max-width: 470px;
+            transition: 2s;
+        }
     }
 
     &-arrows {
@@ -40,3 +51,15 @@
     }
 }
 
+@media screen and (max-width: 1020px) {
+    .slider {
+        background-position: 65% 50%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .slider-content {
+        width: 100%;
+        text-align: center;
+    }
+}

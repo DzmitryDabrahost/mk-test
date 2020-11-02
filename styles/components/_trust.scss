@@ -33,7 +33,7 @@
 
             &-text {
                 width: 470px;
-                @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+                @include font(Lato, normal, 300, 15px, 25px, $color-light);
             }
 
             &-chips {
@@ -69,7 +69,8 @@
                 }
 
                 &-title {
-                    @include font('Lato-Bold, sans-serif', 17px, 30px, $color-main);
+                    @include font(Lato, normal, 600, 17px, 30px, $color-main);
+                    letter-spacing: 0.01em;
                 }
             }
         }

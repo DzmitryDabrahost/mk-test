@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MK ПРАВОВЫЕ ТЕХНОЛОГИИ</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -41,6 +45,23 @@
                 <div class="header-bottom-logo">
                         <a href="#"><img src="assets/images/image/Logo.svg" alt="Logo"></a>
                 </div>
+                <div class="mobile-menu">
+                    <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+                    <label for="checkbox" class="mobile-menu__btn">
+                        <div class="mobile-menu__icon"></div>
+                    </label>
+                    <div class="mobile-menu__container">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Главная</a></li>
+                            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">о нас</a></li>
+                            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">услуги</a></li>
+                            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">тарифы</a></li>
+                            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">инфоцентр</a></li>
+                            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">контакты</a></li>
+                            <li class="mobile-menu__item"><a href="#" class="mobile-menu__link"><img src="assets/images/icons/search.png" alt="search"></a></li>
+                        </ul>
+                    </div>
+                </div>
                 <nav class="navigation">
                     <ul class="navigation-list">
                         <li class="navigation-item"><a href="#" class="navigation-link">Главная</a></li>
@@ -49,13 +70,9 @@
                         <li class="navigation-item"><a href="#" class="navigation-link">тарифы</a></li>
                         <li class="navigation-item"><a href="#" class="navigation-link">инфоцентр</a></li>
                         <li class="navigation-item"><a href="#" class="navigation-link">контакты</a></li>
-                        <li class="navigation-item"><a href="#" class="navigation-link">
-                            <object data="search.svg" type="image/svg+xml">
-                                <img src="assets/images/icons/search.svg" alt="search">
-                            </object></a>
-                        </li>
+                        <li class="navigation-item"><a href="#" class="navigation-link"><img src="assets/images/icons/search.png" alt="search"></a></li>
                     </ul>
-                </nav>
+                </nav> 
             </div>
         </div>
     </header>
@@ -64,7 +81,8 @@
             <div class="wrapper">
                 <div class="slider-section">
                     <div class="slider-content">
-                        <h2>Взыскание дебиторской задолженности</h2>
+                        <h2 class="slider-content-title">Взыскание дебиторской задолженности</h2>
+                        <p class="slider-content-subtitle"></p>
                         <div class="slider-content__button">
                             <form action="#">
                                 <button class="button">Подробнее</button>
@@ -73,10 +91,10 @@
                     </div>
                     <div class="slider-arrows">
                         <div class="slider-arrows__left">
-                            <img src="./assets/images/icons/arrow-left.png" alt="arrow-left">
+                            <img src="./assets/images/icons/arrow-left.png" class="slider-arrows__left-img" alt="arrow-left">
                         </div>
                         <div class="slider-arrows__right">
-                            <img src="./assets/images/icons/arrow-right.png" alt="arrow-right">
+                            <img src="./assets/images/icons/arrow-right.png" class="slider-arrows__right-img" alt="arrow-right">
                         </div>
                     </div>
                 </div>
@@ -292,12 +310,20 @@
         <section class="slide">
             <div class="wrapper">
                 <div class="slide-content">
-                    <img src="./assets/images/slides/Rectangle 107 (1).png" alt="slide1">
+                    <div class="slide-content-image">
+                        <div class="slide-content-image-block">
+                            <img class="slide-content-image-item" src="./assets/images/slides/bottom-slider1.png" alt="slide1">
+                            <img class="slide-content-image-item" src="./assets/images/slides/bottom-slider2.png" alt="slide2">
+                            <img class="slide-content-image-item" src="./assets/images/slides/bottom-slider3.png" alt="slide3">
+                            <img class="slide-content-image-item" src="./assets/images/slides/bottom-slider4.png" alt="slide4">
+                            <img class="slide-content-image-item" src="./assets/images/slides/bottom-slider5.png" alt="slide5">
+                        </div>
+                    </div>
                     <p class="slide-content-arrow-left">
-                        <img src="./assets/images/icons/arrow-left-big.png" alt="arrow-left">
+                        <img class="slide-content-arrow-left-item" src="./assets/images/icons/arrow-left-big.png" alt="arrow-left">
                     </p>
                     <p class="slide-content-arrow-right">
-                        <img src="./assets/images/icons/arrow-right-big.png" alt="arrow-right">
+                        <img class="slide-content-arrow-right-item" src="./assets/images/icons/arrow-right-big.png" alt="arrow-right">
                     </p>
                 </div>
             </div>
@@ -309,41 +335,80 @@
                         <h3>Отзывы наших партнеров</h3>
                     </div>
                     <div class="reviews-content-block">
-                        <div class="reviews-card">
-                            <div class="reviews-card-image">
-                                <img src="./assets/images/image/Rectangle 109.png" alt="review">
+                        <div class="reviews-card-block">
+                            <div class="reviews-card">
+                                <div class="reviews-card-image">
+                                    <img src="./assets/images/image/Rectangle 109.png" alt="review">
+                                </div>
+                                <div class="reviews-card-content">
+                                    <p class="reviews-card-profession">директор</p>
+                                    <h4>С.В. Косачев</h4>
+                                    <p class="reviews-card-text">
+                                        Уважаемая Светлана Александровна! Наша компания выражает благодарность и признательность обществу с ограниченной ответственностью «МК-Правовые технологии». 
+                                        Благодаря слаженной работе и высокой квалификации Ваших сотрудников и специалистов компания «ВиваСтрой» получила качественные юридические услуги по взысканию денежных средств с должника. 
+                                        Профессионализм работников ООО «МК-Правовые технологии», а также желание работать со сложными и нестандартными задачами является залогом высокоэффективного и успешного взаимодействия наших компаний. Рекомендуем...
+                                    </p>
+                                    <form action="#">
+                                        <button class="button-additional">Читать далее</button>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="reviews-card-content">
-                                <p class="reviews-card-profession">директор</p>
-                                <h4>С.В. Косачев</h4>
-                                <p class="reviews-card-text">
-                                    Уважаемая Светлана Александровна! Наша компания выражает благодарность и признательность обществу с ограниченной ответственностью «МК-Правовые технологии». 
-                                    Благодаря слаженной работе и высокой квалификации Ваших сотрудников и специалистов компания «ВиваСтрой» получила качественные юридические услуги по взысканию денежных средств с должника. 
-                                    Профессионализм работников ООО «МК-Правовые технологии», а также желание работать со сложными и нестандартными задачами является залогом высокоэффективного и успешного взаимодействия наших компаний. Рекомендуем...
-                                </p>
-                                <form action="#">
-                                    <button class="button-additional">Читать далее</button>
-                                </form>
+                            <div class="reviews-card">
+                                <div class="reviews-card-image">
+                                    <img src="./assets/images/image/Rectangle 109.png" alt="review">
+                                </div>
+                                <div class="reviews-card-content">
+                                    <p class="reviews-card-profession">глава представительства</p>
+                                    <h4>Валерий Мяснянкин</h4>
+                                    <p class="reviews-card-text">
+                                        Представительство корпорации «VMSN GROUP, INC.» (США) в Республике Беларусь
+                                        на протяжении нескольких лет сотрудничает с ООО «МК-Правовые технологии» в рамках сопровождения
+                                        деятельности по юридическим вопросам, в том числе по вопросам ведения кадрового делопроизводства – 
+                                        абонентское обслуживание. Хотелось бы отметить работу специалистов ООО «МК-Правовые технологии» хорошими 
+                                        теплыми словами: надёжные, обязательные, пунктуальные. Вопросы любой сложности им по плечу. 
+                                        Работая с профессионалами МК-Правовые технологии, всегда можно рассчитывать...
+                                    </p>
+                                    <form action="#">
+                                        <button class="button-additional">Читать далее</button>
+                                    </form>
+                                </div>
                             </div>
-                        </div>
-                        <div class="reviews-card">
-                            <div class="reviews-card-image">
-                                <img src="./assets/images/image/Rectangle 109.png" alt="review">
+                            <div class="reviews-card">
+                                <div class="reviews-card-image">
+                                    <img src="./assets/images/image/Rectangle 109.png" alt="review">
+                                </div>
+                                <div class="reviews-card-content">
+                                    <p class="reviews-card-profession">директор</p>
+                                    <h4>С.В. Косачев</h4>
+                                    <p class="reviews-card-text">
+                                        Уважаемая Светлана Александровна! Наша компания выражает благодарность и признательность обществу с ограниченной ответственностью «МК-Правовые технологии». 
+                                        Благодаря слаженной работе и высокой квалификации Ваших сотрудников и специалистов компания «ВиваСтрой» получила качественные юридические услуги по взысканию денежных средств с должника. 
+                                        Профессионализм работников ООО «МК-Правовые технологии», а также желание работать со сложными и нестандартными задачами является залогом высокоэффективного и успешного взаимодействия наших компаний. Рекомендуем...
+                                    </p>
+                                    <form action="#">
+                                        <button class="button-additional">Читать далее</button>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="reviews-card-content">
-                                <p class="reviews-card-profession">глава представительства</p>
-                                <h4>Валерий Мяснянкин</h4>
-                                <p class="reviews-card-text">
-                                    Представительство корпорации «VMSN GROUP, INC.» (США) в Республике Беларусь
-                                    на протяжении нескольких лет сотрудничает с ООО «МК-Правовые технологии» в рамках сопровождения
-                                    деятельности по юридическим вопросам, в том числе по вопросам ведения кадрового делопроизводства – 
-                                    абонентское обслуживание. Хотелось бы отметить работу специалистов ООО «МК-Правовые технологии» хорошими 
-                                    теплыми словами: надёжные, обязательные, пунктуальные. Вопросы любой сложности им по плечу. 
-                                    Работая с профессионалами МК-Правовые технологии, всегда можно рассчитывать...
-                                </p>
-                                <form action="#">
-                                    <button class="button-additional">Читать далее</button>
-                                </form>
+                            <div class="reviews-card">
+                                <div class="reviews-card-image">
+                                    <img src="./assets/images/image/Rectangle 109.png" alt="review">
+                                </div>
+                                <div class="reviews-card-content">
+                                    <p class="reviews-card-profession">глава представительства</p>
+                                    <h4>Валерий Мяснянкин</h4>
+                                    <p class="reviews-card-text">
+                                        Представительство корпорации «VMSN GROUP, INC.» (США) в Республике Беларусь
+                                        на протяжении нескольких лет сотрудничает с ООО «МК-Правовые технологии» в рамках сопровождения
+                                        деятельности по юридическим вопросам, в том числе по вопросам ведения кадрового делопроизводства – 
+                                        абонентское обслуживание. Хотелось бы отметить работу специалистов ООО «МК-Правовые технологии» хорошими 
+                                        теплыми словами: надёжные, обязательные, пунктуальные. Вопросы любой сложности им по плечу. 
+                                        Работая с профессионалами МК-Правовые технологии, всегда можно рассчитывать...
+                                    </p>
+                                    <form action="#">
+                                        <button class="button-additional">Читать далее</button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -357,8 +422,8 @@
                             <span class="reviews-card-buttons__point"></span>
                         </div>
                         <div class="reviews-card-buttons-arrows">
-                            <span><img src="./assets/images/icons/arrow-left.png" alt="arrow-left"></span>
-                            <span><img src="./assets/images/icons/arrow-right.png" alt="arrow-right"></span>
+                            <span  class="reviews-card-buttons-arrows-left inactivity"><img src="./assets/images/icons/arrow-left.png" alt="arrow-left"></span>
+                            <span  class="reviews-card-buttons-arrows-right"><img src="./assets/images/icons/arrow-right.png" alt="arrow-right"></span>
                         </div>
                     </div>
                 </div>
@@ -430,8 +495,7 @@
                 </div>
             </div>
         </section>
-        <section>
-            <img src="./assets/images/image/centr.png" alt="center">
+        <section class="center">
         </section>
         <section class="list">
             <div class="wrapper">
@@ -934,5 +998,6 @@
     <section class="autor">
         <p class="autor-content">Разработка и продвижение сайта - Digital агентство «Веб Фокус»</p>
     </section>
+    <script src="./js/js.js"></script>
 </body>
 </html>

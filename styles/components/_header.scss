@@ -29,11 +29,11 @@ h1 {
             color: $color-light;
 
             &__title {
-                @include font('Sounce-Sans-Pro-Light, sans-serif', 16px, 20px, $color-light);
+                @include font(Sounce Sans Pro, normal, 300, 16px, 20px, $color-light);
             }
 
             & select {
-                @include font('Sounce-Sans-Pro-Regular, sans-serif', 16px, 20px, $color-light);
+                @include font(Sounce Sans Pro, normal, normal, 16px, 20px, $color-light);
                 border: none;
                 outline: none;
                 cursor: pointer;
@@ -59,8 +59,7 @@ h1 {
             }
 
             & a {
-                text-decoration: none;
-                @include font('Commisioner-Regular, sans-serif', 14px, 20px, $color-light2);
+                @include font(Commisioner, normal, normal, 14px, 20px, $color-light2);
             }
 
             &-icon {
@@ -79,6 +78,146 @@ h1 {
     }
 }
 
+.mobile-menu {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+    top: 90px;
+    right: 53px;
+    z-index: 4;
+    
+    &__btn {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        transition: .4s;
+    }
+    
+    &__icon {
+        display: block;
+        position: relative;
+        background-color: $color-gold;
+        width: 30px;
+        height: 3px;
+        transition: .4s;
+        z-index: 3;
+
+        &::after,
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            background: $color-gold;
+            width: 30px;
+            height: 3px;
+            transition: .4s;
+            z-index: 3;
+        }
+        
+        &::after {
+            top: -10px;
+        }
+
+        &::before {
+            top: 10px;
+        }
+    }
+  
+    &__container {
+        position: fixed;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: -320px;
+        z-index: 2;
+        height: 100vh;
+        width: 320px;
+        opacity: 1;
+        transition: .5s;
+        transition-delay: .2s;
+        overflow: hidden;
+        background-color: #292929;
+    }
+    
+    &__list {
+        transition: .5s;
+        transition-delay: .5s;
+        list-style: none;
+        padding-left: 0;
+    }
+  
+    &__item {
+        font-size: 32px;
+        padding-bottom: 40px;
+        font-family: Arial;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 51px;
+    }
+  
+    &__link {
+        color: $color-gold;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $color-white;
+        }
+
+        &-active {
+            border-bottom: 3px solid #FAFAFA;
+            color: #FAFAFA;
+        }
+    }
+   
+    &__checkbox {
+        display: none;
+  
+        &:checked ~ {
+            .mobile-menu {
+  
+                &__container {
+                    height: 100vh;
+                    right: 0;
+                    transition-delay: 0s;
+                }
+  
+                &__btn {
+                  .mobile-menu__icon {
+    
+                        &::before {
+                            top: 0px;
+                        }
+                        &::after {
+                            top: 0px;
+                        }
+        
+                        &::after {
+                            transform: rotate(90deg);
+                        }
+        
+                        &::before {
+                            transform: rotate(-90deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mobile-menu {
+    display: none;
+}
+
 .navigation {
     &-list {
         display: flex;
@@ -87,9 +226,8 @@ h1 {
     }
 
     &-link {
-        text-decoration: none;
         text-transform: uppercase;
-        @include font('Commisioner-Medium, sans-serif', 14px, 20px, $color-main);
+        @include font(Commisioner, normal, bold, 14px, 20px, $color-main);
         letter-spacing: 0.03em;
 
         &:hover {
@@ -122,6 +260,39 @@ h1 {
     .navigation {
         &-list {
             column-gap: 10px;
+        }
+
+        &-link {
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navigation {
+        display: none;
+    }
+    .mobile-menu {
+        display: block;
+        top: 120px;
+        right: 10px;
+    }
+    .header-top-eyes {  
+        display: none;
+    }
+    .header {
+        height: 200px;
+    }
+    .header-top {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .header-top-contacts {
+        width: 100%;
+        &-column {
+            justify-content: center;
         }
     }
 }

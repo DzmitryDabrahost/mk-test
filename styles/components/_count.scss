@@ -11,7 +11,7 @@
         max-width: 670px;
 
         &-description {
-            @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+            @include font(Lato, normal, 300, 15px, 25px, $color-light);
         }
     }
 }

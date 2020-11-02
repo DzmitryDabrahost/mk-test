@@ -26,14 +26,12 @@
                 border-radius: 50%;
 
                 & span {
-                    @include font('Commisioner-Bold, sans-serif', 22px, 67px, $color-gold);
-                    font-weight: 800;
+                    @include font(Commisioner, normal, 800, 22px, 67px, $color-gold);
                 }
             }
 
             &-subtitle {
-                @include font('Lato-Regular, sans-serif', 15px, 25px, $color-light);
-                font-weight: bold;
+                @include font(Lato, normal, bold, 15px, 25px, $color-light);
                 max-width: 400px;
             }
 
@@ -44,8 +42,7 @@
             }
 
             &-signature {
-                @include font('Lato-Light, sans-serif', 14px, 25px, $color-light);
-                font-weight: 300;
+                @include font(Lato, normal, 300, 14px, 25px, $color-light);
                 letter-spacing: 0.01em;
             }
         }
@@ -70,21 +67,21 @@
                     padding-left: 10px;
 
                     &::placeholder {
-                        @include font('Lato-Light, sans-serif', 15px, 25px, $color-light2);
+                        @include font(Lato, normal, 300, 15px, 25px, $color-light2);
                         opacity: 0.6;
                     }
                 }
 
                 &-name {
                     margin-top: 40px;
-                    @include font('Commisioner-Bold, sans-serif', 13px, 20px, $color-light);
+                    @include font(Commisioner, normal, bold, 13px, 20px, $color-light);
                     letter-spacing: 0.01em;
                     margin-bottom: 8px;
                 }
 
                 &-tel {
                     margin-top: 20px;
-                    @include font('Commisioner-Regular, sans-serif', 13px, 20px, $color-light2);
+                    @include font(Commisioner, normal, normal, 13px, 20px, $color-light2);
                     letter-spacing: 0.01em;
                     margin-bottom: 11px;
                 }
@@ -92,11 +89,11 @@
                 &-politic {
                     margin-top: 20px;
                     margin-bottom: 26px;
-                    @include font('Lato-Light, sans-serif', 13px, 21px, $color-light2);
+                    @include font(Lato, normal, 300, 13px, 21px, $color-light2);
 
                     & a {
                         text-decoration: none;
-                        @include font('Lato-Bold, sans-serif', 13px, 20px, $color-light2);
+                        @include font(Lato, normal, bold, 13px, 20px, $color-light2);
                         font-weight: bold;
                         text-decoration-line: underline;
                     }

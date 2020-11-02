@@ -13,19 +13,46 @@
     }
 
     &-information {
-        padding: 52px 60px 70px 70px;
-        width: 100%;
+        width: 540px;
+        margin-left: 70px;
+        margin-top: 50px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        row-gap: 30px;
 
         &-content {
             display: flex;
+            row-gap: 24px;
             width: 29.375rem;
-            height: 26.5625rem;
-            justify-content: space-between;
             flex-wrap: wrap;
-            @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+            @include font(Lato, normal, 300, 15px, 25px, $color-light);
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .introduction {
+        &-content {
+            height: auto;
+        }
+
+        &-image {
+            display: none;
+        }
+        &-information {
+            margin: 70px 50px;
+            width: 100%;
+            &-content {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .introduction {
+        &-information {
+            margin: 50px 20px;
         }
     }
 }

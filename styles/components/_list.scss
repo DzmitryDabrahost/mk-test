@@ -22,6 +22,7 @@
         &-background {
             height: 100%;
             width: 70px;
+            min-width: 70px;
         }
 
         &-card {
@@ -65,7 +66,7 @@
                 width: 100%;
 
                 & h6 {
-                    padding: 25px 30px 0 30px;
+                    padding: 22px 50px 0 30px;;
                 }
             }
 
@@ -84,7 +85,7 @@
 
             &-description {
                 width: 65.8%;
-                @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+                @include font(Lato, normal, 300, 15px, 25px, $color-light);
             }
         }
     }

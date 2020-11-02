@@ -21,43 +21,34 @@ footer {
     width: 1170px;
 }
 
+.subtitle2 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    color: $color-main;
+}
+
 h2 {
-    font-family: 'Commissioner-Regular', sans-serif;
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: 0.78px;
-    color: $color-primary;
+    @include font(Commissioner, normal, normal, 40px, 50px, $color-main);
+    letter-spacing: 0.01em;
 }
 
 h3 {
-    font-family: 'Commissioner-Regular', sans-serif;
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: 1.1px;
-    color: $color-primary;
+    @include font(Commissioner, normal, normal, 28px, 40px, $color-primary);
+    letter-spacing: 0.03em;
 }
 
 h4 {
-    font-family: 'Commisioner-Bold', sans-serif;
-    font-size: 26px;
-    line-height: 40px;
-    letter-spacing: 1.1px;
-    color: $color-gold;
+    @include font(Commissioner, normal, normal, 26px, 40px, $color-gold);
+    letter-spacing: 0.01em;
 }
 
 h5 {
-    font-family: 'Commissioner-Regular', sans-serif;
-    font-size: 26px;
-    line-height: 45px;
-    color: $color-primary;
+    @include font(Commissioner, normal, normal, 26px, 45px, $color-primary);
 }
 
 h6 {
-    font-family: 'Commissioner-Regular', sans-serif;
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: 1.1px;
-    color: $color-primary;
+    @include font(Commissioner, normal, normal, 20px, 30px, $color-primary);
 }
 
 .button {
@@ -65,12 +56,9 @@ h6 {
     border: none;
     outline: none;
     width: 12.5rem;
-    color: $color-white;
+    @include font(Commissioner, normal, bold, 13px, 30px, $color-white);
     text-transform: uppercase;
-    font-family: 'Commisioner-Bold', sans-serif;
-    font-size: 13px;
-    line-height: 30px;
-    letter-spacing: 1.1px;
+    letter-spacing: 0.08em;
     cursor: pointer;
     padding: 9px 0;
     border-radius: 2px;
@@ -81,17 +69,14 @@ h6 {
 }
 
 .button-additional {
-    font-family: 'Lato-Bold', sans-serif;
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 1.1px;
+    @include font(Lato, normal, 600, 12px, 20px, $color-light2);
+    letter-spacing: 0.02em;
     text-transform: uppercase;
-    color: $color-light2;
     border: none;
     outline: none;
     background: 0;
-    padding: 0;
     margin: 0;
+    padding: 0;
 
     &:hover {
         cursor: pointer;
@@ -101,4 +86,62 @@ h6 {
 
 a {
     text-decoration: none;
+}
+
+.hide-block {
+    animation: hide-block 1s linear;
+}
+
+.inactivity {
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+@keyframes hide-block {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.show-block {
+    animation: show-block 1s linear;
+}
+
+@keyframes show-block {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .wrapper {
+        width: 100vw;
+        padding: 0 20px
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
 }

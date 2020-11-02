@@ -27,7 +27,7 @@
         flex-direction: column;
         margin-top: 40px;
         margin-left: 70px;
-        @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+        @include font(Lato, normal, 300, 15px, 25px, $color-light);
 
         &-list {
             display: flex;
@@ -41,7 +41,7 @@
                 border-bottom: 1px solid $color-inactive;
 
                 & a {
-                    @include font('Lato-Light, sans-serif', 14px, 25px, $color-light);
+                    @include font(Lato, normal, 300, 14px, 25px, $color-light);
                     letter-spacing: 0.01em;
                 }
             }

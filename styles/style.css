@@ -19,8 +19,6 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -92,42 +90,58 @@ footer {
   width: 1170px;
 }
 
+.subtitle2 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.75);
+}
+
 h2 {
-  font-family: 'Commissioner-Regular', sans-serif;
+  font-family: Commissioner, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 40px;
   line-height: 50px;
-  letter-spacing: 0.78px;
-  color: rgba(0, 0, 0, 0.9);
+  color: rgba(0, 0, 0, 0.75);
+  letter-spacing: 0.01em;
 }
 
 h3 {
-  font-family: 'Commissioner-Regular', sans-serif;
+  font-family: Commissioner, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 28px;
   line-height: 40px;
-  letter-spacing: 1.1px;
   color: rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.03em;
 }
 
 h4 {
-  font-family: 'Commisioner-Bold', sans-serif;
+  font-family: Commissioner, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 26px;
   line-height: 40px;
-  letter-spacing: 1.1px;
   color: #DEC377;
+  letter-spacing: 0.01em;
 }
 
 h5 {
-  font-family: 'Commissioner-Regular', sans-serif;
+  font-family: Commissioner, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 26px;
   line-height: 45px;
   color: rgba(0, 0, 0, 0.9);
 }
 
 h6 {
-  font-family: 'Commissioner-Regular', sans-serif;
+  font-family: Commissioner, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 1.1px;
   color: rgba(0, 0, 0, 0.9);
 }
 
@@ -136,12 +150,14 @@ h6 {
   border: none;
   outline: none;
   width: 12.5rem;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  font-family: 'Commisioner-Bold', sans-serif;
+  font-family: Commissioner, sans-serif;
+  font-style: normal;
+  font-weight: bold;
   font-size: 13px;
   line-height: 30px;
-  letter-spacing: 1.1px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
   cursor: pointer;
   padding: 9px 0;
   border-radius: 2px;
@@ -152,17 +168,19 @@ h6 {
 }
 
 .button-additional {
-  font-family: 'Lato-Bold', sans-serif;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 600;
   font-size: 12px;
   line-height: 20px;
-  letter-spacing: 1.1px;
-  text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
   border: none;
   outline: none;
   background: 0;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .button-additional:hover {
@@ -174,67 +192,86 @@ a {
   text-decoration: none;
 }
 
-@font-face {
-  font-family: 'Commisioner-Regular, sans-serif';
-  src: url("../../assets/fonts/Commissioner/Commissioner-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+.hide-block {
+  -webkit-animation: hide-block 1s linear;
+          animation: hide-block 1s linear;
 }
 
-@font-face {
-  font-family: 'Commisioner-Bold, sans-serif';
-  src: url("../../assets/fonts/Commissioner/Commissioner-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
+.inactivity {
+  pointer-events: none;
+  opacity: 0.2;
 }
 
-@font-face {
-  font-family: 'Commisioner-Medium, sans-serif';
-  src: url("../../assets/fonts/Commissioner/Commissioner-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
+@-webkit-keyframes hide-block {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-@font-face {
-  font-family: 'Lato-Regular, sans-serif';
-  src: url("../../assets/fonts/Lato/Lato-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+@keyframes hide-block {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-@font-face {
-  font-family: 'Lato-Light, sans-serif';
-  src: url("../../assets/fonts/Lato/Lato-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
+.show-block {
+  -webkit-animation: show-block 1s linear;
+          animation: show-block 1s linear;
 }
 
-@font-face {
-  font-family: 'Lato-Bold, sans-serif';
-  src: url("../../assets/fonts/Lato/Lato-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
+@-webkit-keyframes show-block {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@font-face {
-  font-family: 'Sounce-Sans-Pro-Light, sans-serif';
-  src: url("../../assets/fonts/Source_Sans_pro/SourceSansPro-Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+@keyframes show-block {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-@font-face {
-  font-family: 'Sounce-Sans-Pro-Regular, sans-serif';
-  src: url("../../assets/fonts/Source_Sans_pro/SourceSansPro-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+@media screen and (max-width: 1170px) {
+  .wrapper {
+    width: 100vw;
+    padding: 0 20px;
+  }
 }
 
-@font-face {
-  font-family: 'Fira-Sans-extra-bold, sans-serif';
-  src: url("../../assets/fonts/Fira_Sans/FiraSans-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
+@media screen and (max-width: 767px) {
+  h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+  h4 {
+    font-size: 20px;
+  }
 }
 
 h1 {
@@ -291,14 +328,18 @@ h1 {
 }
 
 .header-top-form__title {
-  font-family: "Sounce-Sans-Pro-Light, sans-serif";
+  font-family: Sounce Sans Pro, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 16px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.8);
 }
 
 .header-top-form select {
-  font-family: "Sounce-Sans-Pro-Regular, sans-serif";
+  font-family: Sounce Sans Pro, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.8);
@@ -336,8 +377,9 @@ h1 {
 }
 
 .header-top-contacts a {
-  text-decoration: none;
-  font-family: "Commisioner-Regular, sans-serif";
+  font-family: Commisioner, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -365,6 +407,164 @@ h1 {
   margin-bottom: 20px;
 }
 
+.mobile-menu {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+  top: 90px;
+  right: 53px;
+  z-index: 4;
+}
+
+.mobile-menu__btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.mobile-menu__icon {
+  display: block;
+  position: relative;
+  background-color: #DEC377;
+  width: 30px;
+  height: 3px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: 3;
+}
+
+.mobile-menu__icon::after, .mobile-menu__icon::before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: #DEC377;
+  width: 30px;
+  height: 3px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  z-index: 3;
+}
+
+.mobile-menu__icon::after {
+  top: -10px;
+}
+
+.mobile-menu__icon::before {
+  top: 10px;
+}
+
+.mobile-menu__container {
+  position: fixed;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  right: -320px;
+  z-index: 2;
+  height: 100vh;
+  width: 320px;
+  opacity: 1;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+  overflow: hidden;
+  background-color: #292929;
+}
+
+.mobile-menu__list {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+  list-style: none;
+  padding-left: 0;
+}
+
+.mobile-menu__item {
+  font-size: 32px;
+  padding-bottom: 40px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 51px;
+}
+
+.mobile-menu__link {
+  color: #DEC377;
+  text-transform: uppercase;
+}
+
+.mobile-menu__link:hover {
+  color: #FFFFFF;
+}
+
+.mobile-menu__link-active {
+  border-bottom: 3px solid #FAFAFA;
+  color: #FAFAFA;
+}
+
+.mobile-menu__checkbox {
+  display: none;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__container {
+  height: 100vh;
+  right: 0;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
+  top: 0px;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+  top: 0px;
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.mobile-menu {
+  display: none;
+}
+
 .navigation-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -377,9 +577,10 @@ h1 {
 }
 
 .navigation-link {
-  text-decoration: none;
   text-transform: uppercase;
-  font-family: "Commisioner-Medium, sans-serif";
+  font-family: Commisioner, sans-serif;
+  font-style: normal;
+  font-weight: bold;
   font-size: 14px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.75);
@@ -411,11 +612,46 @@ h1 {
     -webkit-column-gap: 10px;
             column-gap: 10px;
   }
+  .navigation-link {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navigation {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+    top: 120px;
+    right: 10px;
+  }
+  .header-top-eyes {
+    display: none;
+  }
+  .header {
+    height: 200px;
+  }
+  .header-top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .header-top-contacts {
+    width: 100%;
+  }
+  .header-top-contacts-column {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .slider {
-  width: 100%;
-  background-image: url(../../assets/images/slides/slider1.png);
+  max-width: 100%;
+  background: center, no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -423,6 +659,8 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .slider-section {
@@ -438,7 +676,6 @@ h1 {
 
 .slider-content {
   margin-top: 162px;
-  width: 31.25rem;
   height: 15rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -450,6 +687,24 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.slider-content-title {
+  max-width: 570px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.slider-content-subtitle {
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(0, 0, 0, 0.8);
+  max-width: 470px;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 .slider-arrows {
@@ -473,6 +728,19 @@ h1 {
 
 .slider-arrows__left:hover, .slider-arrows__right:hover {
   opacity: .7;
+}
+
+@media screen and (max-width: 1020px) {
+  .slider {
+    background-position: 65% 50%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .slider-content {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .advantages {
@@ -538,12 +806,31 @@ h1 {
 }
 
 .advantages-card__subtitle {
-  font-family: "Lato-Regular, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.75);
   text-align: center;
   letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 970px) {
+  .advantages-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .advantages-card {
+    width: 47%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-card {
+    width: 100%;
+  }
 }
 
 .introduction {
@@ -570,8 +857,9 @@ h1 {
 }
 
 .introduction-information {
-  padding: 52px 60px 70px 70px;
-  width: 100%;
+  width: 540px;
+  margin-left: 70px;
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -579,26 +867,45 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  row-gap: 30px;
 }
 
 .introduction-information-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  row-gap: 24px;
   width: 29.375rem;
-  height: 26.5625rem;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 1080px) {
+  .introduction-content {
+    height: auto;
+  }
+  .introduction-image {
+    display: none;
+  }
+  .introduction-information {
+    margin: 70px 50px;
+    width: 100%;
+  }
+  .introduction-information-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .introduction-information {
+    margin: 50px 20px;
+  }
 }
 
 .directions {
@@ -615,7 +922,6 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 40rem;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -625,6 +931,10 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 100px;
+}
+
+.directions-content-title {
+  margin-bottom: 35px;
 }
 
 .directions-content-box {
@@ -637,6 +947,7 @@ h1 {
   -webkit-column-gap: 30px;
           column-gap: 30px;
   row-gap: 30px;
+  margin-bottom: 40px;
 }
 
 .directions-content-card {
@@ -679,11 +990,43 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   width: 5rem;
+  min-width: 5rem;
   height: 5rem;
   margin-top: 15px;
   margin-right: 15px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .directions-content-box {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
+  .directions-content-card {
+    width: 32%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .directions-content-card {
+    width: 48%;
+  }
+  .directions-content-button {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .directions-content-card {
+    width: 100%;
+  }
+  .directions-content-card-subtitle {
+    padding: 0 10px;
+  }
 }
 
 .directions2 {
@@ -693,11 +1036,10 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 100px;
+  margin-top: 98px;
 }
 
 .directions2-content {
-  height: 12.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,7 +1049,8 @@ h1 {
 }
 
 .directions2-content-subtitle {
-  width: 84%;
+  width: 86%;
+  row-gap: 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -718,10 +1061,36 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.003em;
+}
+
+@media screen and (max-width: 1300px) {
+  .directions2 {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .directions2-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .directions2-content-title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .directions2-content-subtitle {
+    width: 100%;
+    text-align: justify;
+  }
 }
 
 .slide {
@@ -732,11 +1101,39 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 560px;
   margin-top: 60px;
 }
 
 .slide-content {
   position: relative;
+  width: 100%;
+  height: 560px;
+}
+
+.slide-content-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  max-width: 100%;
+  height: 560px;
+  overflow: hidden;
+}
+
+.slide-content-image-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: calc(100% * 5);
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
 }
 
 .slide-content-arrow-left, .slide-content-arrow-right {
@@ -757,6 +1154,12 @@ h1 {
 
 .slide-content-arrow-right {
   right: -50px;
+}
+
+@media screen and (max-width: 1300px) {
+  .slide {
+    display: none;
+  }
 }
 
 .reviews {
@@ -784,18 +1187,21 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 740px;
+}
+
+.reviews-content-title {
+  margin-bottom: 35px;
 }
 
 .reviews-content-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-column-gap: 30px;
-          column-gap: 30px;
+  width: 100%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  height: 592px;
 }
 
 .reviews-card {
@@ -809,10 +1215,40 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  min-width: 48.5%;
-  height: 585px;
+  min-width: 48.8%;
+  max-width: 570px;
   -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.reviews-card-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-transition: 1s;
+  transition: 1s;
+  left: 0;
+  top: 0;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
+  padding: 4px;
+}
+
+.reviews-card-image {
+  max-width: 570px;
+}
+
+.reviews-card-image img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .reviews-card-content {
@@ -827,18 +1263,26 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 40px 50px 60px 50px;
+  padding: 40px 52px 64px;
 }
 
 .reviews-card-profession {
-  font-family: "Lato-Regular, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.5);
 }
 
 .reviews-card-text {
-  font-family: "Lato-Light, sans-serif";
+  margin-top: 20px;
+  margin-bottom: 25px;
+  max-height: 250px;
+  overflow: hidden;
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 14px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -862,6 +1306,7 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-left: -80px;
   width: 50px;
   -webkit-column-gap: 10px;
           column-gap: 10px;
@@ -922,6 +1367,31 @@ h1 {
   pointer-events: none;
 }
 
+@media screen and (max-width: 1300px) {
+  .reviews {
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .reviews-content-title {
+    text-align: center;
+  }
+  .reviews-content-block {
+    row-gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .reviews-card {
+    width: 100%;
+  }
+  .reviews-card-buttons__points {
+    margin-left: 0;
+  }
+}
+
 .clients {
   background-color: #FFFFFF;
   display: -webkit-box;
@@ -930,7 +1400,7 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 100px 0;
+  padding: 100px 0 90px;
 }
 
 .clients-content {
@@ -944,7 +1414,7 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  row-gap: 40px;
+  row-gap: 48px;
 }
 
 .clients-content-title {
@@ -955,7 +1425,9 @@ h1 {
 
 .clients-content-text {
   width: 670px;
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -1029,18 +1501,24 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   min-width: 570px;
-  height: 305px;
-  padding: 0 55px;
+  padding: 0 50px;
   row-gap: 15px;
   background-color: #FFFFFF;
 }
 
+.triangle-content-card-title {
+  margin-top: 40px;
+}
+
+.triangle-content-card-text {
+  margin-bottom: 55px;
+}
+
 .triangle-content-card-text, .triangle-content-card-text__bottom {
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -1062,9 +1540,9 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   height: 185px;
-  padding: 0 55px;
-  -webkit-column-gap: 15px;
-          column-gap: 15px;
+  padding: 0 50px;
+  -webkit-column-gap: 30px;
+          column-gap: 30px;
   background-color: #FFFFFF;
 }
 
@@ -1128,6 +1606,7 @@ h1 {
 .list-content-background {
   height: 100%;
   width: 70px;
+  min-width: 70px;
 }
 
 .list-content-card {
@@ -1194,7 +1673,7 @@ h1 {
 }
 
 .list-content-card-text h6 {
-  padding: 25px 30px 0 30px;
+  padding: 22px 50px 0 30px;
 }
 
 .list-content-card-button {
@@ -1216,7 +1695,9 @@ h1 {
 
 .list-content-bottom-description {
   width: 65.8%;
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -1281,7 +1762,9 @@ h1 {
 
 .trust-content-card-text {
   width: 470px;
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -1332,10 +1815,13 @@ h1 {
 }
 
 .trust-content-card-chips-title {
-  font-family: "Lato-Bold, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 600;
   font-size: 17px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.75);
+  letter-spacing: 0.01em;
 }
 
 .dignity {
@@ -1375,7 +1861,9 @@ h1 {
 }
 
 .dignity-description-text {
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -1431,19 +1919,21 @@ h1 {
 }
 
 .cooperation-content-description-circle span {
-  font-family: "Commisioner-Bold, sans-serif";
+  font-family: Commisioner, sans-serif;
+  font-style: normal;
+  font-weight: 800;
   font-size: 22px;
   line-height: 67px;
   color: #DEC377;
-  font-weight: 800;
 }
 
 .cooperation-content-description-subtitle {
-  font-family: "Lato-Regular, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: bold;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: bold;
   max-width: 400px;
 }
 
@@ -1459,11 +1949,12 @@ h1 {
 }
 
 .cooperation-content-description-signature {
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 14px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 300;
   letter-spacing: 0.01em;
 }
 
@@ -1495,7 +1986,9 @@ h1 {
 }
 
 .cooperation-content-opposite-form input::-webkit-input-placeholder {
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.5);
@@ -1503,7 +1996,9 @@ h1 {
 }
 
 .cooperation-content-opposite-form input:-ms-input-placeholder {
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.5);
@@ -1511,7 +2006,9 @@ h1 {
 }
 
 .cooperation-content-opposite-form input::-ms-input-placeholder {
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.5);
@@ -1519,7 +2016,9 @@ h1 {
 }
 
 .cooperation-content-opposite-form input::placeholder {
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.5);
@@ -1528,7 +2027,9 @@ h1 {
 
 .cooperation-content-opposite-form-name {
   margin-top: 40px;
-  font-family: "Commisioner-Bold, sans-serif";
+  font-family: Commisioner, sans-serif;
+  font-style: normal;
+  font-weight: bold;
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.8);
@@ -1538,7 +2039,9 @@ h1 {
 
 .cooperation-content-opposite-form-tel {
   margin-top: 20px;
-  font-family: "Commisioner-Regular, sans-serif";
+  font-family: Commisioner, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -1549,7 +2052,9 @@ h1 {
 .cooperation-content-opposite-form-politic {
   margin-top: 20px;
   margin-bottom: 26px;
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 13px;
   line-height: 21px;
   color: rgba(0, 0, 0, 0.5);
@@ -1557,7 +2062,9 @@ h1 {
 
 .cooperation-content-opposite-form-politic a {
   text-decoration: none;
-  font-family: "Lato-Bold, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: bold;
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -1594,7 +2101,9 @@ h1 {
 }
 
 .count-content-description {
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -1636,7 +2145,9 @@ h1 {
 }
 
 .footer-company-name {
-  font-family: "Commisioner-Regular, sans-serif";
+  font-family: Commisioner, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 20px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.9);
@@ -1668,7 +2179,9 @@ h1 {
 }
 
 .footer-company-data-id-title {
-  font-family: "Commisioner-Medium, sans-serif";
+  font-family: Commisioner, sans-serif;
+  font-style: normal;
+  font-weight: 500;
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -1676,7 +2189,9 @@ h1 {
 }
 
 .footer-company-data-id-subtitle {
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -1704,11 +2219,12 @@ h1 {
           align-items: center;
   width: 100%;
   row-gap: 30px;
-  font-family: "Lato-Regular, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 600;
   font-size: 12px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.75);
-  font-weight: 600;
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
@@ -1738,7 +2254,9 @@ h1 {
 }
 
 .footer-office-title {
-  font-family: "Lato-Regular, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 15px;
   line-height: 31px;
   color: rgba(0, 0, 0, 0.5);
@@ -1769,7 +2287,9 @@ h1 {
 }
 
 .footer-office-contacts-title, .footer-office-contacts-region-title {
-  font-family: "Commisioner-Regular, sans-serif";
+  font-family: Commisioner, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.75);
@@ -1788,7 +2308,9 @@ h1 {
 }
 
 .footer-office-contacts-phones a {
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -1806,7 +2328,9 @@ h1 {
 }
 
 .footer-office-contacts-adress-title {
-  font-family: "Commisioner-Medium, sans-serif";
+  font-family: Commisioner, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.75);
@@ -1815,14 +2339,18 @@ h1 {
 
 .footer-office-contacts-adress-location {
   width: 85%;
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
 }
 
 .footer-office-contacts-adress-email a {
-  font-family: "Commisioner-Regular, sans-serif";
+  font-family: Commisioner, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.8);
@@ -1880,12 +2408,19 @@ h1 {
 }
 
 .autor-content {
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 12px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 300;
   letter-spacing: 0.02em;
+}
+
+.center {
+  width: 100%;
+  height: 180px;
+  background: url(../../assets/images/image/centr.png), center, no-repeat;
 }
 
 .services-slide {
@@ -1912,7 +2447,9 @@ h1 {
 
 .services-slide-crumb {
   margin-top: 35px;
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 13px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -1967,8 +2504,9 @@ h1 {
 }
 
 .nav-list li a {
-  text-decoration: none;
-  font-family: "Lato-Regular, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.75);
@@ -2010,7 +2548,9 @@ h1 {
 
 .product-content-title {
   text-transform: uppercase;
-  font-family: "Commisioner-Regular";
+  font-family: Commisioner, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -2073,7 +2613,9 @@ h1 {
 .product-content-arrow-item {
   height: 40px;
   width: 40px;
-  font-family: "Commisioner-Bold, sans-serif";
+  font-family: Commisioner, sans-serif;
+  font-style: normal;
+  font-weight: bold;
   font-size: 16px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.3);
@@ -2123,7 +2665,9 @@ h1 {
 }
 
 .reklama-content-title {
-  font-family: "Fira-Sans-extra-bold, sans-serif";
+  font-family: Fira Sans, sans-serif;
+  font-style: normal;
+  font-weight: 800;
   font-size: 100px;
   line-height: 120px;
   color: rgba(0, 0, 0, 0.1);
@@ -2158,7 +2702,9 @@ h1 {
 }
 
 .information-content-title {
-  font-family: "Commissioner-Regular, sans-serif";
+  font-family: Commissioner, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -2170,7 +2716,9 @@ h1 {
 .information-content-text {
   margin-bottom: 30px;
   max-width: 730px;
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -2178,11 +2726,12 @@ h1 {
 
 .information-content-subtitle {
   min-width: 570px;
-  font-family: "Lato-Regular, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 600;
   font-size: 17px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.75);
-  font-weight: 600;
   letter-spacing: 0.01em;
   margin-bottom: 30px;
 }
@@ -2217,7 +2766,9 @@ h1 {
 }
 
 .information-content-block-item-text {
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -2251,7 +2802,9 @@ h1 {
 
 .information-content-block-subdescription-text {
   width: 270px;
-  font-family: "Lato-Regular, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -2326,7 +2879,9 @@ h1 {
 }
 
 .registration-content-description-title {
-  font-family: "Commisioner-Regular, sans-serif";
+  font-family: Commisioner, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -2336,11 +2891,12 @@ h1 {
 }
 
 .registration-content-description-text {
-  font-family: "Lato-Bold, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 600;
   font-size: 17px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.75);
-  font-weight: 600;
   letter-spacing: 0.01em;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -2394,7 +2950,9 @@ h1 {
 
 .documents-content-description {
   max-width: 48%;
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -2408,11 +2966,12 @@ h1 {
 }
 
 .documents-content-block-title {
-  font-family: "Lato-Bold, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 600;
   font-size: 17px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 600;
 }
 
 .documents-content-block-content {
@@ -2487,11 +3046,12 @@ h1 {
 
 .aspects-content-block-title {
   margin-bottom: 30px;
-  font-family: "Lato-Bold, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 600;
   font-size: 17px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 600;
   letter-spacing: 0.01em;
 }
 
@@ -2515,7 +3075,9 @@ h1 {
 }
 
 .aspects-content-block-item-text {
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -2550,7 +3112,9 @@ h1 {
 }
 
 .order-section-name {
-  font-family: "Commisioner-Regular, sans-serif";
+  font-family: Commisioner, sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: rgba(0, 0, 0, 0.5);
@@ -2567,11 +3131,12 @@ h1 {
 .order-section-description {
   width: 670px;
   max-width: 670px;
-  font-family: "Lato-Bold, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 600;
   font-size: 17px;
   line-height: 30px;
   color: rgba(0, 0, 0, 0.8);
-  font-weight: 600;
   letter-spacing: 0.01em;
   margin-bottom: 40px;
 }
@@ -2634,7 +3199,9 @@ h1 {
           flex-direction: column;
   margin-top: 40px;
   margin-left: 70px;
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 15px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);
@@ -2659,7 +3226,9 @@ h1 {
 }
 
 .services-cooperation-bottom-text-list li a {
-  font-family: "Lato-Light, sans-serif";
+  font-family: Lato, sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 14px;
   line-height: 25px;
   color: rgba(0, 0, 0, 0.8);

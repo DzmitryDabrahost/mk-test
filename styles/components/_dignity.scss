@@ -24,7 +24,7 @@
         background-color: $color-white;
 
         &-text {
-            @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+            @include font(Lato, normal, 300, 15px, 25px, $color-light);
             max-width: 750px;
         }
     }

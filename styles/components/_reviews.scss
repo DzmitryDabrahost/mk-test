@@ -11,12 +11,18 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        height: 740px;
+
+        &-title {
+            margin-bottom: 35px;
+        }
 
         &-block {
             display: flex;
-            justify-content: space-between;
-            column-gap: 30px;
+            width: 100%;
+            margin-bottom: 30px;
+            overflow: hidden;
+            position: relative;
+            height: 592px;
         }
     }
 
@@ -24,24 +30,49 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        min-width: 48.5%;
-        height: 585px;
+        min-width: 48.8%;
+        max-width: 570px;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+
+        &-block {
+            display: flex;
+            position: absolute;
+            transition: 1s;
+            left: 0;
+            top: 0;
+            width: 100%;
+            justify-content: space-between;
+            column-gap: 30px;
+            padding: 4px;
+        }
+
+        &-image {
+            max-width: 570px;
+            & img {
+                max-width: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
 
         &-content {
             display: flex;
             height: 100%;
             flex-direction: column;
             justify-content: space-between;
-            padding: 40px 50px 60px 50px;
+            padding: 40px 52px 64px;
         }
 
         &-profession {
-            @include font('Lato-Regular, sans-serif', 15px, 25px, $color-light2);
+            @include font(Lato, normal, normal, 15px, 25px, $color-light2);
         }
 
         &-text {
-            @include font('Lato-Light, sans-serif', 14px, 25px, $color-light);
+            margin-top: 20px;
+            margin-bottom: 25px;
+            max-height: 250px;
+            overflow: hidden;
+            @include font(Lato, normal, 300, 14px, 25px, $color-light);
             letter-spacing: 0.01em;
         }
 
@@ -53,6 +84,7 @@
 
             &__points {
                 display: flex;
+                margin-left: -80px;
                 width: 50px;
                 column-gap: 10px;
                 justify-content: space-between;
@@ -97,4 +129,31 @@
 .point-active {
     border-bottom: 10px solid $color-gold;
     pointer-events: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .reviews {
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .reviews {
+        &-content {
+            &-title {
+                text-align: center;
+            }
+            &-block {
+                row-gap: 30px;
+                justify-content: center;
+            }
+        }
+        &-card {
+            width: 100%;
+            &-buttons__points {
+                margin-left: 0;
+            }
+        }
+    }
 }

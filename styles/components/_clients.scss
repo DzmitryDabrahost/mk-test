@@ -2,13 +2,13 @@
     background-color: $color-white;
     display: flex;
     justify-content: center;
-    padding: 100px 0;
+    padding: 100px 0 90px;
 
     &-content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        row-gap: 40px;
+        row-gap: 48px;
 
         &-title {
             display: flex;
@@ -16,7 +16,7 @@
 
         &-text {
             width: 670px;
-            @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+            @include font(Lato, normal, 300, 15px, 25px, $color-light);
         }
 
         &-form {

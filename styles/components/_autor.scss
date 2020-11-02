@@ -7,8 +7,7 @@
     background-color: $color-inactive;
 
     &-content {
-        @include font('Lato-Light, sans-serif', 12px, 20px, $color-light);
-        font-weight: 300;
+        @include font(Lato, normal, 300, 12px, 20px, $color-light);
         letter-spacing: 0.02em;
     }
 }

@@ -11,7 +11,7 @@
 
         &-description {
             max-width: 48%;
-            @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+            @include font(Lato, normal, 300, 15px, 25px, $color-light);
         }
 
         &-block {
@@ -19,8 +19,7 @@
             margin-bottom: 100px;
 
             &-title {
-                @include font('Lato-Bold, sans-serif', 17px, 30px, $color-light);
-                font-weight: 600;
+                @include font(Lato, normal, 600, 17px, 30px, $color-light);
             }
 
             &-content {

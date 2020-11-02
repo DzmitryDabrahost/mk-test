@@ -19,16 +19,22 @@
         &-card {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             min-width: 570px;
-            height: 305px;
-            padding: 0 55px;
+            padding: 0 50px;
             row-gap: 15px;
             background-color: $color-white;
 
+            &-title {
+                margin-top: 40px;
+            }
+
+            &-text {
+                margin-bottom: 55px;
+            }
+
             &-text,
             &-text__bottom {
-                @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+                @include font(Lato, normal, 300, 15px, 25px, $color-light);
             }
 
             &-title__bottom {
@@ -43,8 +49,8 @@
                 justify-content: space-between;
                 align-items: center;
                 height: 185px;
-                padding: 0 55px;
-                column-gap: 15px;
+                padding: 0 50px;
+                column-gap: 30px;
                 background-color: $color-white;
             }
         }

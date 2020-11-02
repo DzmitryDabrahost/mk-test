@@ -1,19 +1,42 @@
 .directions2 {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 98px;
 
     &-content {
-        height: 12.5rem;
         display: flex;
         justify-content: space-between;
 
         &-subtitle {
-            width: 84%;
+            width: 86%;
+            row-gap: 24px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+            @include font(Lato, normal, 300, 15px, 25px, $color-light);
+            letter-spacing: 0.003em;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .directions2 {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .directions2 {
+        &-content {
+            flex-direction: column;
+            &-title {
+                margin-bottom: 30px;
+                text-align: center;
+            }
+            &-subtitle {
+                width: 100%;
+                text-align: justify;
+            }
         }
     }
 }

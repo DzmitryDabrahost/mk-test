@@ -12,7 +12,7 @@
         margin-bottom: 100px;
 
         &-title {
-            @include font('Commissioner-Regular, sans-serif', 14px, 20px, $color-light2);
+            @include font(Commissioner, normal, normal, 14px, 20px, $color-light2);
             letter-spacing: 0.03em;
             text-transform: uppercase;
             margin-bottom: 40px;
@@ -21,13 +21,12 @@
         &-text {
             margin-bottom: 30px;
             max-width: 730px;
-            @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+            @include font(Lato, normal, 300, 15px, 25px, $color-light);
         }
 
         &-subtitle {
             min-width: 570px;
-            @include font('Lato-Regular, sans-serif', 17px, 30px, $color-main);
-            font-weight: 600;
+            @include font(Lato, normal, 600, 17px, 30px, $color-main);
             letter-spacing: 0.01em;
             margin-bottom: 30px;
         }
@@ -52,7 +51,7 @@
                 }
 
                 &-text {
-                    @include font('Lato-Light, sans-serif', 15px, 25px, $color-light);
+                    @include font(Lato, normal, 300, 15px, 25px, $color-light);
                 }
             }
 
@@ -72,7 +71,7 @@
 
                 &-text {
                     width: 270px;
-                    @include font('Lato-Regular, sans-serif', 15px, 25px, $color-light);
+                    @include font(Lato, normal, normal, 15px, 25px, $color-light);
                 }
             }
         }

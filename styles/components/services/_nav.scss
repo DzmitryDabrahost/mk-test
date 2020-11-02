@@ -18,8 +18,7 @@
             }
         
             & a {
-                text-decoration: none;
-                @include font('Lato-Regular, sans-serif', 16px, 25px, $color-main);
+                @include font(Lato, normal, normal, 16px, 25px, $color-main);
                 letter-spacing: 0.02em;
             }
         }
