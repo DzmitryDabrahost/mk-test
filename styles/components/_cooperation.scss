@@ -12,7 +12,7 @@
             display: flex;
             flex-direction: column;
             max-width: 500px;
-            width: 500px;
+            width: 42.73%;
             margin-right: 100px;
             row-gap: 33px;
 
@@ -49,7 +49,7 @@
 
         &-opposite {
             max-width: 570px;
-            width: 570px;
+            width: 48.72%;
             background-color: $color-white;
             padding: 0 50px;
 
@@ -105,4 +105,39 @@
 
 .opposite-button {
     width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .cooperation {
+        &-content {
+            &-description {
+                margin-right: 20px;
+                &-subtitle {
+                    font-size: 13px;
+                }
+                &-signature {
+                    font-size: 11px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cooperation-content {
+        flex-direction: column;
+        row-gap: 30px;
+        &-description {
+            width: 100%;
+            max-width: 100%;
+        }
+        &-opposite {
+            width: 100%;
+            max-width: 100%;
+            padding: 0 15px;
+            &-form-button {
+                margin-bottom: 30px;
+            }
+        }
+    }
 }

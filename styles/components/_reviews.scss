@@ -30,7 +30,7 @@
         display: flex;
         justify-content: space-between;
         flex-direction: column;
-        min-width: 48.8%;
+        width: 50%;
         max-width: 570px;
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
 
@@ -48,6 +48,7 @@
 
         &-image {
             max-width: 570px;
+            display: contents;
             & img {
                 max-width: 100%;
                 object-fit: cover;
@@ -145,15 +146,20 @@
                 text-align: center;
             }
             &-block {
-                row-gap: 30px;
                 justify-content: center;
             }
         }
         &-card {
-            width: 100%;
+            min-width: 100%;
             &-buttons__points {
                 margin-left: 0;
             }
         }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .reviews-card-buttons__points {
+        display: none;
     }
 }

@@ -76,3 +76,29 @@
         }
     }
 }
+
+@media screen and (max-width: 1100px) {
+    .trust-content-card {
+        column-gap: 30px;
+        width: 100%;
+        &-text {
+            width: 100%;
+        }
+        &-chips-content {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .trust-content-card {
+        flex-direction: column;
+        row-gap: 30px;
+        &-description {
+            width: 100%;
+        }
+        &-title {
+            text-align: center;
+        }
+    }
+}

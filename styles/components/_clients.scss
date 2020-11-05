@@ -27,7 +27,7 @@
             display: flex;
             justify-content: space-between;
             padding: 0 21px;
-            filter: grayscale(100%)
+            filter: grayscale(100%);
         }
     }
 }
@@ -40,5 +40,39 @@
     &:hover {
         color: $color-white;
         transition: .3s ease-in-out;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .clients {
+        &-content {
+            &-title {
+                flex-direction: column;
+                row-gap: 20px;
+                align-items: center;
+            }
+            &-text {
+                width: 100%;
+            }
+            &-form {
+                margin: 0;
+            }
+            &-icon {
+                width: 100%;
+                column-gap: 20px;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .clients {
+        &-content {
+            &-text {
+                text-align: justify;
+                padding: 0 10px;
+            }
+        }
     }
 }

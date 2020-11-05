@@ -3,3 +3,15 @@
     height: 180px;
     background: url(../../assets/images/image/centr.png), center, no-repeat;
 }
+
+@media screen and (max-width: 900px) {
+    .center {
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .center {
+        display: none;
+    }
+}

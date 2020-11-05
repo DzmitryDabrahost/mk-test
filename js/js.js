@@ -77,7 +77,6 @@ btnPrev.addEventListener('click', function () {
 
 // reviews slider 
 
-const blockWeight = document.querySelector('.reviews-card-block').offsetWidth;
 const nextBtn = document.querySelector('.reviews-card-buttons-arrows-right');
 const prevBtn = document.querySelector('.reviews-card-buttons-arrows-left');
 const parentBlock = document.querySelector('.reviews-card-block');
@@ -89,7 +88,7 @@ nextBtn.addEventListener('click', (e) => {
     prevBtn.classList.remove('inactivity');
     removeActiveClass();
     countSlide < blockSlider.length - 2 ? countSlide++ :  nextBtn.classList.add('inactivity');
-    parentBlock.style.left = `-${countSlide * viewport / 2}px`;
+    parentBlock.style.left = `-${countSlide * (parentBlock.offsetWidth) / 2}px`;
     console.log(countSlide, blockSlider.length)
 });
 
@@ -102,7 +101,8 @@ prevBtn.addEventListener('click', (e) => {
         prevBtn.classList.add('inactivity');
     }
     console.log(countSlide, blockSlider.length)
-    parentBlock.style.left = `-${countSlide * (viewport / 2)}px`;
+    parentBlock.style.left = `-${countSlide * (parentBlock.offsetWidth / 2)}px`;
+    console.dir(blockSlider);
 });
 
 const removeActiveClass = () => {

@@ -33,8 +33,8 @@
 
             &-row1 {
                 display: grid;
-                grid-template-columns: 470px 670px;
-                column-gap: 30px;
+                grid-template-columns: 40.17% 57.26%;
+                column-gap: 2.57%;
 
                 .list-content-background {
                     background-color: $accent40;
@@ -42,8 +42,8 @@
             }
             &-row2 {
                 display: grid;
-                grid-template-columns: 570px 570px;
-                column-gap: 30px;
+                grid-template-columns: 48.71% 48.71%;
+                column-gap: 2.58%;
 
                 .list-content-background {
                     background-color: $accent75;
@@ -51,8 +51,8 @@
             }
             &-row3 {
                 display: grid;
-                grid-template-columns: 670px 470px;
-                column-gap: 30px;
+                grid-template-columns: 57.26% 40.17%;
+                column-gap: 2.57%;
 
                 .list-content-background {
                     background-color: $color-gold;
@@ -86,6 +86,37 @@
             &-description {
                 width: 65.8%;
                 @include font(Lato, normal, 300, 15px, 25px, $color-light);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list-content {
+        &-card {
+            width: 100%;
+
+            &-row1,
+            &-row2,
+            &-row3 {
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+            }
+            &-text h6 {
+                padding: 10px;
+            }
+        }
+        &-bottom {
+            flex-direction: column;
+            &-description {
+                order: 2;
+                width: 100%;
+            }
+            &-button {
+                order: 1;
+                text-align: center;
+                margin-bottom: 40px;
             }
         }
     }

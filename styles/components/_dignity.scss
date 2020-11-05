@@ -29,3 +29,15 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .dignity {
+        &-description {
+            padding: 50px 10px 10px;
+            text-align: justify;
+        }
+        &-content-title {
+            text-align: center;
+        }
+    }
+}
