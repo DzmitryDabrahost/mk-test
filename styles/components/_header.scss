@@ -29,15 +29,19 @@ h1 {
             color: $color-light;
 
             &__title {
-                @include font(Sounce Sans Pro, normal, 300, 16px, 20px, $color-light);
+                @include font(Sounce Sans Pro, normal, 300, 16px, 20px, $color-light2);
             }
 
             & select {
-                @include font(Sounce Sans Pro, normal, normal, 16px, 20px, $color-light);
+                @include font(Sounce Sans Pro, normal, normal, 16px, 20px, $color-light2);
                 border: none;
                 outline: none;
                 cursor: pointer;
-            }   
+            }
+
+            &__option {
+                @include font(Sounce Sans Pro, normal, normal, 16px, 20px, $color-light2);
+            }
         }
 
         &-eyes {

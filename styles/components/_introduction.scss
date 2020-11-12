@@ -25,7 +25,7 @@
             row-gap: 24px;
             width: 29.375rem;
             flex-wrap: wrap;
-            @include font(Lato, normal, 300, 15px, 25px, $color-light);
+            @include font(Lato, normal, 300, 15px, 25px, $color-light2);
         }
     }
 }

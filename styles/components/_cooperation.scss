@@ -31,7 +31,7 @@
             }
 
             &-subtitle {
-                @include font(Lato, normal, bold, 15px, 25px, $color-light);
+                @include font(Lato, normal, normal, 15px, 25px, $color-primary);
                 max-width: 400px;
             }
 
@@ -42,7 +42,7 @@
             }
 
             &-signature {
-                @include font(Lato, normal, 300, 14px, 25px, $color-light);
+                @include font(Lato, normal, 300, 14px, 25px, $color-light2);
                 letter-spacing: 0.01em;
             }
         }

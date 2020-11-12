@@ -25,7 +25,7 @@
         }
 
         &-subtitle {
-            @include font(Lato, normal, 300, 15px, 25px, $color-light);
+            @include font(Lato, normal, 300, 15px, 25px, $color-light2);
             max-width: 470px;
             transition: 2s;
         }

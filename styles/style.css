@@ -336,7 +336,7 @@ h1 {
   font-weight: 300;
   font-size: 16px;
   line-height: 20px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .header-top-form select {
@@ -345,10 +345,19 @@ h1 {
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+.header-top-form__option {
+  font-family: Sounce Sans Pro, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .header-top-eyes {
@@ -704,7 +713,7 @@ h1 {
   font-weight: 300;
   font-size: 15px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
   max-width: 470px;
   -webkit-transition: 2s;
   transition: 2s;
@@ -886,7 +895,7 @@ h1 {
   font-weight: 300;
   font-size: 15px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 1080px) {
@@ -1069,7 +1078,7 @@ h1 {
   font-weight: 300;
   font-size: 15px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
   letter-spacing: 0.003em;
 }
 
@@ -1287,7 +1296,7 @@ h1 {
   font-weight: 300;
   font-size: 14px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
   letter-spacing: 0.01em;
 }
 
@@ -1443,7 +1452,7 @@ h1 {
   font-weight: 300;
   font-size: 15px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .clients-content-form {
@@ -1566,7 +1575,7 @@ h1 {
   font-weight: 300;
   font-size: 15px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .triangle-content-card-title__bottom {
@@ -1794,13 +1803,13 @@ h1 {
 }
 
 .list-content-bottom-description {
-  width: 65.8%;
+  width: 65.5%;
   font-family: Lato, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 15px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 768px) {
@@ -1905,7 +1914,7 @@ h1 {
   font-weight: 300;
   font-size: 15px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .trust-content-card-chips {
@@ -2034,7 +2043,7 @@ h1 {
   font-weight: 300;
   font-size: 15px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
   max-width: 750px;
 }
 
@@ -2108,10 +2117,10 @@ h1 {
 .cooperation-content-description-subtitle {
   font-family: Lato, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 15px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.9);
   max-width: 400px;
 }
 
@@ -2132,7 +2141,7 @@ h1 {
   font-weight: 300;
   font-size: 14px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
   letter-spacing: 0.01em;
 }
 
@@ -2318,7 +2327,7 @@ h1 {
   font-weight: 300;
   font-size: 15px;
   line-height: 25px;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 @media screen and (max-width: 768px) {

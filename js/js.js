@@ -9,7 +9,7 @@ const formAction = document.querySelector('.header-button');
 const sliderContainer = document.querySelector('.slider-content');
 let count = 1;
 const slideContent = [
-        {id: 1, title: 'Взыскание дебиторской задолженности', subtitle: '', src: '#'},
+        {id: 1, title: 'Взыскание дебиторской задолженности', subtitle: 'Индивидуальный подход и нацеленность на достижение результата', src: '#'},
         {id: 2, title: 'Юридический аутсорсинг', subtitle: 'Гарантия своевременности и качества услуг', src: '#'},
         {id: 3, title: 'Юридическая консультация', subtitle: 'Детальные разъяснения вопросов по ведению бизнеса от профессионалов', src: '#'},
         {id: 4, title: 'Ликвидация предприятия', subtitle: 'Эффективное решение сложных задач', src: '#'},
